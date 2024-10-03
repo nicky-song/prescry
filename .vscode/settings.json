@@ -1,0 +1,42 @@
+{
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "git.autofetch": true,
+  "git.mergeEditor": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSameLine": false,
+  "prettier.singleQuote": true,
+  "prettier.proseWrap": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "cSpell.words": [
+    "codeable",
+    "favorited",
+    "fhir",
+    "mapbox",
+    "myrx",
+    "ncpdp",
+    "payor",
+    "pdfmake",
+    "Prescryptive",
+    "primerx",
+    "rtpb",
+    "smartprice",
+    "swiper",
+    "transperfect",
+    "waystar"
+  ],
+}

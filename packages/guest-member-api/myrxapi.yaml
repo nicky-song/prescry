@@ -1,0 +1,491 @@
+swagger: "2.0"
+info:
+  description: "Node APIs"
+  version: "1.0.1"
+  title: "myrx"
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: "Apache 2.0"
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: "test.myrx.io"
+basePath: "/api"
+tags:
+- name: "MyRx"
+  description: "myrx.io"
+  externalDocs:
+    description: "A pharmacy on your phone"
+    url: http://myrx.io
+schemes:
+- "https"
+- "http"
+paths:
+  /health/live:
+    get:
+      tags:
+      - "health"
+      summary: "Health, Live. [No tokens needed]"
+      description: "Health, Live."
+      operationId: "health-live"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            $ref: "#/definitions/HealthLive"
+        "400":
+          description: "invalid"
+  /health/ready:
+    get:
+      tags:
+      - "health"
+      summary: "Health, Ready. [No tokens needed]"
+      description: "Health, Ready."
+      operationId: "health-ready"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            $ref: "#/definitions/HealthReady"
+        "400":
+          description: "invalid"
+  /one-time-password/verify:
+    post:
+      tags:
+      - "otp"
+      summary: "Verify OTP from text message. Use OTP sent to +1XXXXXXXXXX via text message for verification."
+      description: "Verify OTP from text message. Use OTP sent to +1XXXXXXXXXX via text message for verification."
+      operationId: "verify-otp"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Verify text code"
+        required: true
+        schema:
+          $ref: "#/definitions/OtpVerifyBody"
+      responses:
+        "200":
+          description: "success"
+          schema: 
+            $ref: "#/definitions/OtpVerifyResponse"
+        "400":
+          description: "fail"
+  /one-time-password/send:
+    post:
+      tags:
+      - "otp"
+      summary: "Send OTP to the phone. Replace +1XXXXXXXXXX with your phone number in body. No tokens needed."
+      description: "Send OTP to the phone. Replace +1XXXXXXXXXX with your phone number in body. No tokens needed."
+      operationId: "send-otp"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Phone Number where text message need to be sent"
+        required: true
+        schema:
+          $ref: "#/definitions/OtpSendRequestBody"
+      responses:
+        "200":
+          description: "success"
+          schema: 
+            $ref: "#/definitions/OtpSendResponse"
+        "405":
+          description: "Invalid input"
+        "429":
+          description: "Max Attempts reached"
+  /members:
+    get:
+      tags:
+      - "members"
+      summary: "Get Member Profile. Replace the values for device token and authorization in header."
+      description: "This endpoint returns account information as well as Person Profile and dependents"
+      operationId: "get-members"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "x-access-token"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "x-prescryptive-device-token"
+        in: "header"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            $ref: "#/definitions/MemberResponse"
+        "401":
+          description: "unauthorized"
+        "405":
+          description: "invalid"
+  /waitlist:
+    post:
+      tags:
+      - "waitlist"
+      summary: "Send Person Data to Test Waitlist (Ex. COVID-19 PCR). Replace the values for device token and authorization in header."
+      description: "Person joins waitlist for testing (Ex. COVID-19 PCR). Includes test/service type, zip code, person details, and contact info. Replace the values for device token and authorization in header."
+      operationId: "send-waitlist"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "x-access-token"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "x-prescryptive-device-token"
+        in: "header"
+        required: true
+        type: "string"
+      - name: "body"
+        in: "body"
+        description: "Includes test/service type, zip code, person details, and contact info."
+        required: true
+        schema:
+          $ref: "#/definitions/WaitlistRequestBody"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            $ref: "#/definitions/WaitlistResponse"
+        "400":
+          description: "failure"
+definitions:
+  HealthLive:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+        example: "Ok"
+      status:
+        type: "string"
+        example: "success"
+  HealthReady:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+        example: "Ok"
+      status:
+        type: "string"
+        example: "success"
+  WaitlistRequestBody:
+    type: "object"
+    properties:
+      serviceType:
+        type: "string"
+        example: "covid-antigen-binaxnow"
+      zipCode:
+        type: "string"
+        example: "92014"
+      maxMilesAway:
+        type: "number"
+        example: 10
+      myself:
+        type: "boolean"
+        example: false
+      firstName:
+        type: "string"
+        example: "JOHN"
+      lastName:
+        type: "string"
+        example: "STAMOS"
+      dateOfBirth:
+        type: "string"
+        example: "May-05-1955"
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXXX"
+  WaitlistResponse:
+    type: "object"
+    properties:
+      data:
+        type: "object"
+        $ref: "#/definitions/WaitlistData"
+      message:
+        type: "string"
+        example: "Ok"
+      status:
+        type: "string"
+        example: "success"
+  WaitlistData:
+    type: "object"
+    properties:
+      idenitifier:
+        type: "string"
+        example: "XXXXXX"
+      firstName:
+        type: "string"
+        example: "JOHN"
+      lastName:
+        type: "string"
+        example: "STAMOS"
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXXX"
+      serviceType:
+        type: "string"
+        example: "covid-antigen-binaxnow"
+      dateOfBirth:
+        type: "string"
+        example: "YYYY-MM-DD"
+      zipCode:
+        type: "string"
+        example: "XXXXX"
+      dateAdded:
+        type: "string"
+        example: "YYYY-MM-DDTXX:XX:XX.XXXXXXX+XX:XX"
+      maxMilesAway:
+        type: "number"
+        example: 10
+      addedBy:
+        type: "string"
+        example: "+1XXXXXXXXXX"
+      serviceName:
+        type: "string"
+        example: "Abbott BinaxNow COVID-19 Rapid Antigen Test"
+  OtpSendRequestBody:
+    type: "object"
+    required:
+    - "phoneNumber"
+    properties:
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXX"
+  OtpSendResponse:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+        example: "One Time Password sent successful"
+      status:
+        type: "string"
+        example: "success"
+  OtpVerifyBody:
+    type: "object"
+    required:
+    - "code"
+    - "phoneNumber"
+    properties:
+      code:
+        type: "string"
+        example: "XXXXXX"
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXX"      
+  OtpVerifyResponse:
+    type: "object"
+    properties:
+      data:
+        type: "object"
+        $ref: "#/definitions/OtpVerifyResponseData"
+      message:
+        type: "string"
+        example: "XXXXXX"
+      responseCode:
+        type: "number"
+      status:
+        type: "string"
+  OtpVerifyResponseData:
+    type: "object"
+    properties:
+      deviceToken:
+        type: "string"
+      recoveryEmailExists:
+        type: "boolean"
+  MemberResponse:
+    type: "object"
+    properties:
+      data:
+        type: "object"
+        $ref: "#/definitions/MemberData"
+      message:
+        type: "string"
+        example: "XXXXXX"
+      status:
+        type: "string"
+        example: "success"
+  MemberData:
+    type: "object"
+    properties:
+      account:
+        type: "object"
+        $ref: "#/definitions/MemberAccount"
+      profileList:
+        type: "array"
+        items:
+          type: "object"
+          $ref: "#/definitions/MemberProfileElement"
+  MemberAccount:
+    type: "object"
+    properties:
+      firstName:
+        type: "string"
+        example: "JOHN"
+      lastName:
+        type: "string"
+        example: "SMITH"
+      dateOfBirth:
+        type: "string"
+        example: "YYYY-MM-DD"
+      recoveryEmail:
+        type: "string"
+        example: "example@domain.com"
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXXX"
+  MemberProfileElement:
+    type: "object"
+    properties:
+      rxGroupType:
+        type: "string"
+        example: "CASH"
+      primary:
+        type: "object"
+        $ref: "#/definitions/MemberProfileInfo"
+      childMembers:
+        type: "array"
+        items:
+          type: "object"
+          $ref: "#/definitions/MemberProfileInfo"
+      adultMembers:
+        type: "array"
+        items:
+          type: "object"
+          $ref: "#/definitions/MemberProfileInfo"
+  MemberProfileInfo:
+    type: "object"
+    properties:
+      firstName:
+        type: "string"
+        example: "JOHN"
+      lastName:
+        type: "string"
+        example: "SMITH"
+      dateOfBirth:
+        type: "string"
+        example: "YYYY-MM-DD"
+      identifier:
+        type: "string"
+        example: "XYZ"
+      isPhoneNumberVerified:
+        type: "boolean"
+        example: true
+      primaryFamilyMemberId:
+        type: "string"
+        example: "XXXXXX"
+      primaryMemberPersonCode:
+        type: "string"
+        example: "ZZ"
+      primaryMemberRxId:
+        type: "string"
+        example: "XXXXXXZZZ"
+      phoneNumber:
+        type: "string"
+        example: "+1XXXXXXXXXX"
+      isPrimary:
+        type: "boolean"
+        example: true
+      isLimited:
+        type: "boolean"
+        example: false
+      rxGroup:
+        type: "string"
+        example: "XXXXXXX"
+      rxGroupType:
+        type: "string"
+        example: "CASH"
+      rxSubGroup:
+        type: "string"
+        example: "CASH01"
+      rxBin:
+        type: "string"
+        example: "XXXXXX"
+      carrierPCN:
+        type: "string"
+        example: "XZZ"
+      address1:
+        type: "string"
+        example: "ZZZ XXX XXX."
+      city:
+        type: "string"
+        example: "XXXX"
+      state:
+        type: "string"
+        example: "XX"
+      zip:
+        type: "string"
+        example: "ZZZZZ"
+      county:
+        type: "string"
+        example: "XXXXXX"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+  Failure_TokenIsInvalid:
+    type: "object"
+    properties:
+      code:
+        type: "number"
+        example: 2008
+      message:
+        type: "string"
+        example: "Token is invalid"
+      status:
+        type: "string"
+        example: "failure"
+  Failure_DeviceNotVerified:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+        example: "Device not verified"
+      status:
+        type: "string"
+        example: "failure"
+  Failure_AccountTokenNotSupplied:
+    type: "object"
+    properties:
+      code:
+        type: "number"
+        example: 2002
+      message:
+        type: "string"
+        example: "Account token is not supplied"
+      status:
+        type: "string"
+        example: "failure"
+  Failure_InvalidInformation:
+    type: "object"
+    properties:
+      code:
+        type: "number"
+        example: 3009
+      message:
+        type: "string"
+        example: "Information is missing or invalid in this request"
+      status:
+        type: "string"
+        example: "failure"

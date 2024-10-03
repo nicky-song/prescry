@@ -1,0 +1,11 @@
+{
+  "ignorePatterns": [
+    "node_modules",
+    "types",
+    "lib"
+  ],
+  "rules": {
+    "filename-rules/match": "warn",
+    "require-await": "warn"
+  }
+}

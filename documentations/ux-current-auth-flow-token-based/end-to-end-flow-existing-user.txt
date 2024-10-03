@@ -1,0 +1,71 @@
+title Existing User 
+
+actor Client
+
+Client->UI:Click on the prescription message link
+
+activate Client
+activate UI
+
+UI -->UI : Determine the prescription identifier
+
+activate API Server
+
+alt no token 
+
+UI --> UI :* Navigate to Login Screen \n* Request user to verify device \n* On successfull login , Navigate to claim alert screen as per identifier
+
+space
+else token present
+
+alt no identifier
+
+UI ->API Server : Request to get Member Contact Info
+
+API Server -->API Server: Validate Token
+alt invalid token 
+
+API Server --> UI : Error Response
+
+UI --> UI : Request User to Re-login
+
+else valid token
+
+API Server -> UI : Send Member Contact Info
+
+UI-->UI : Navigate to meber contact info screen
+
+end 
+
+else identifier present
+
+UI -> API Server: Request to get the prescription document by identifier
+
+API Server -->API Server: Validate Token
+
+alt invalid token 
+
+API Server --> UI : Error Response
+
+UI --> UI : Request User to Re-login
+
+else valid token
+
+API Server -->API Server: Validate identifier
+
+alt invalid identifier
+
+API Server --> UI : Error Response
+
+UI --> UI : Navigate to Fatal Error Screen
+
+else valid identifier
+
+API Server --> UI : Success Response with document
+
+UI -->UI : Navigate to claim alert screen
+
+end
+end
+end
+end

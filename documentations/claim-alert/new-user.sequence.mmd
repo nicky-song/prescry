@@ -1,0 +1,26 @@
+sequenceDiagram
+    Participant Twilio
+    Actor User
+    Twilio-->>User: Sends a prescription message to user
+    User->>Myrx UI: Navigates to myrx.io <br/> Received via text message 
+    Note over Myrx UI: Phone number login screen (Sign in)
+    User->>Myrx UI: Enter phone number
+    Myrx UI-)Myrx API: https://test.myrx.io/api/one-time-password/send
+    Myrx API --)Twilio: Notify Twilio to send OTP
+    Twilio --) User: Sends OTP
+     Note over Myrx UI: Phone number verification screen (OTP)
+    User ->>Myrx UI: Enter OTP <br/>Received via text message
+    Myrx UI-)+Myrx API:https://test.myrx.io/api/one-time-password/verify
+    Myrx API->>Myrx UI:{"message":"Phone Number has been verified successfully.","status":"success"}
+    Note over Myrx UI: Create your account screen
+    Myrx UI-)Myrx API: https://test.myrx.io/api/login
+    Myrx API->>Myrx UI: {message: "Authentication successful!", responseCode: 2001, status: "success"}
+    Note over Myrx UI: Create PIN
+    Note over Myrx UI: Verify PIN
+    Myrx UI-)Myrx API: https://test-api.prescryptive.io:4300/api/account/add
+    Myrx API->>Myrx UI: {"message":"pin successfully added","status":"success"}
+     Note left of Myrx UI: calls API with claim alert ID
+    Myrx UI-)Myrx API: https://test.myrx.io/api/pending-prescriptions/<claimAlertId>
+    Myrx API->>Myrx UI: IPendingMedicationResponseData
+    Note over Myrx UI: Claim alert screen
+    Myrx UI-->>User : Content

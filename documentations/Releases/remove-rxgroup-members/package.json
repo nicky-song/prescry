@@ -1,0 +1,17 @@
+{
+  "name": "terminate-pbm-users",
+  "version": "1.0.0",
+  "description": "This script removes pbm users by rxGroup and/or rxSubGroup",
+  "main": "process.js",
+  "scripts": {
+    "start": "node process.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.1",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.1",
+    "mongodb": "^4.2.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,26 @@
+graph TD
+A([Any Screen]) --> AA{ApplicationHeader}
+AA --> |prop| B[showProfileAvatar]
+B --> |true| C{DrawerHamburgerButton}
+B --> |false| D([No Drawer Navigation])
+C --> |onPress| F[navigation.openDrawer]
+C --> |No Press Behavior| D
+F --> |Navigate to SideMenuDrawerContent| G{SideMenuDrawerContent}
+F --> |useDrawerStatus set to 'open'| I
+F --> Q[setDrawerOpenDispatch]
+G --> |On Component Mount| H[useDrawerContext]
+G --> |On Component Mount| I[useDrawerStatus]
+H --> J[status]
+J --> |'open'| K[isDrawerOpen = true]
+J --> |'closed'| L[isDrawerOpen = false]
+I --> |'open'| I
+I --> |'closed'| M([useDrawerStatus is 'closed' AND isDrawerOpen is 'true'])
+K --> |'true'| M
+G --> |children| N{SideMenuHeader}
+N --> |children| O{IconButton - Close}
+O --> |onPress| P[navigation.closeDrawer]
+O --> |No Press Behavior| G
+P --> |useDrawerStatus set to 'closed'| I
+P --> |Navigate Back to Screen| A
+Q --> |useDrawerContext set to 'open'| H
+M --> |useEffect| R[setDrawerClosedDispatch]

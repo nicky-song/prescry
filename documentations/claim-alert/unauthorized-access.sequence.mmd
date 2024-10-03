@@ -1,0 +1,7 @@
+sequenceDiagram
+    Actor User
+    User-)+Myrx UI: Click on the prescription(Rx) Url <br/>received in the text message
+    Note right of Myrx UI: Sign in and/or Login with pin
+    Myrx UI-)+Myrx API: https://test.myrx.io/api/pending-prescriptions/<claimAlertId>
+    Myrx API-)-Myrx UI: {"code":1001,"message":"Unauthorized access","status":"failure"}
+    Note right of Myrx UI: To view this prescription, please <br/>login with matching memberID 

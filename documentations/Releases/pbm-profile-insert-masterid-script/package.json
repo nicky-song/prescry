@@ -1,0 +1,20 @@
+{
+  "name": "redirect_health_users_hydrate_with_master_id",
+  "version": "1.0.0",
+  "description": "This script will read csv, remove duplicates, validate user info and publish masterid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prescryptive",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.1",
+    "csv-parse": "^5.3.0",
+    "dotenv": "^16.0.3",
+    "mongodb": "^4.10.0",
+    "node-csv": "^0.1.2",
+    "node-fetch": "^3.2.10"
+  }
+}

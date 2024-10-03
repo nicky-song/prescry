@@ -1,0 +1,19 @@
+{
+  "name": "migrate-activation-users",
+  "version": "1.0.0",
+  "description": "This script updates patient and patient account data from corresponding myrx accounts",
+  "main": "update-patient-data.js",
+  "scripts": {
+    "start": "node migrate-activation-users.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.1",
+    "crypto": "^1.0.1",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.1",
+    "mongodb": "^4.2.0",
+    "node-fetch": "^2.6.0"
+  },
+  "license": "MIT"
+}

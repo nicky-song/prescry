@@ -1,0 +1,9 @@
+packages/*/build
+packages/*/coverage
+packages/*/lib
+packages/*/.jest
+packages/*/*.log
+packages/*/*.md
+.env
+**/.env
+.git

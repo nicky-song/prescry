@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      (function(window, document) {
+        var googleAnalyticsId = '${GOOGLE_ANALYTICS_ID}';
+        googleAnalyticsId =
+          googleAnalyticsId.indexOf('$') > -1
+            ? 'G-G9L03K4BEE'
+            : googleAnalyticsId;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        var scriptElement = document.createElement('script');
+        scriptElement.async = true;
+        scriptElement.src =
+          'https://www.googletagmanager.com/gtag/js?id=' + googleAnalyticsId;
+
+        firstScriptTag.parentNode.insertBefore(scriptElement, firstScriptTag);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', googleAnalyticsId);
+      })(window, document);
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WT84C3B');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Heap -->
+    <script type="text/javascript">
+      (window.heap = window.heap || []),
+        (heap.load = function(e, t) {
+          (window.heap.appid = e), (window.heap.config = t = t || {});
+          var r = document.createElement('script');
+          (r.type = 'text/javascript'),
+            (r.async = !0),
+            (r.src = 'https://cdn.heapanalytics.com/js/heap-' + e + '.js');
+          var a = document.getElementsByTagName('script')[0];
+          a.parentNode.insertBefore(r, a);
+          for (
+            var n = function(e) {
+                return function() {
+                  heap.push(
+                    [e].concat(Array.prototype.slice.call(arguments, 0))
+                  );
+                };
+              },
+              p = [
+                'addEventProperties',
+                'addUserProperties',
+                'clearEventProperties',
+                'identify',
+                'resetIdentity',
+                'removeEventProperty',
+                'setEventProperties',
+                'track',
+                'unsetEventProperty',
+              ],
+              o = 0;
+            o < p.length;
+            o++
+          )
+            heap[p[o]] = n(p[o]);
+        });
+      heap.load('${HEAP_ID}');
+    </script>   
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 
+      This viewport works for phones with notches.
+      It's optimized for gestures by disabling global zoom.
+     -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"
+    />
+    <title>%WEB_TITLE%</title>
+    <meta name="description" content="myPrescryptive is a digital pharmacy platform where you can shop and manage prescriptions and book services with your pharmacist, all on your phone." />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="prescryptive" />
+    <meta name="theme-color" content="#6240A3" />
+
+    <!-- Pipeline variables -->
+    <meta
+      property="env:GUESTMEMBEREXPERIENCE_HOST"
+      content="${GUESTMEMBEREXPERIENCE_HOST}"
+    />
+    <meta
+      property="env:GUESTMEMBEREXPERIENCE_PORT"
+      content="${GUESTMEMBEREXPERIENCE_PORT}"
+    />
+    <meta
+      property="env:APPINSIGHTS_INSTRUMENTATION_KEY"
+      content="${APPINSIGHTS_INSTRUMENTATION_KEY}"
+    />
+    <meta
+      property="env:APPINSIGHTS_SERVICE_NAME_WEB"
+      content="rxassistant-web"
+    />
+    <meta property="env:PAYMENTS_KEY_PUBLIC" content="${PAYMENTS_KEY_PUBLIC}" />
+    <meta
+      property="env:PAYMENTS_KEY_PUBLIC_TEST"
+      content="${PAYMENTS_KEY_PUBLIC_TEST}"
+    />
+    <meta property="env:MEMBER_PORTAL_URL" content="${MEMBER_PORTAL_URL}" />
+    <meta property="env:SUPPORT_EMAIL" content="${SUPPORT_EMAIL}" />
+    <meta
+      property="env:MEMBER_SUPPORT_EMAIL"
+      content="${MEMBER_SUPPORT_EMAIL}"
+    />
+    <meta
+    property="env:CMS_REFRESH_INTERVAL"
+    content="${CMS_REFRESH_INTERVAL}"
+    />
+    <meta
+    property="env:CHILD_MEMBER_AGE_LIMIT"
+    content="${CHILD_MEMBER_AGE_LIMIT}"
+    />
+    <meta
+      property="env:CANCEL_APPOINTMENT_WINDOW_HOURS"
+      content="${CANCEL_APPOINTMENT_WINDOW_HOURS}"
+    />
+    <meta
+      property="env:CONTENT_MANAGEMENT_HOST"
+      content="${CONTENT_MANAGEMENT_HOST}"
+    />
+    <meta property="env:DOMAIN_DATA_HOST" content="${DOMAIN_DATA_HOST}" />
+    <meta property="env:DOMAIN_DATA_SUBSCRIPTION_KEY_PUBLIC" content="${DOMAIN_DATA_SUBSCRIPTION_KEY_PUBLIC}" />
+    <meta property="env:HEAP_ID" content="${HEAP_ID}" />
+    <meta
+      name="facebook-domain-verification"
+      content="lu1nwdy5wq6v9m9kywlns1yfo2he8t"
+    />
+    <meta property="env:TALKATIVE_JAVASCRIPT_URL" content="${TALKATIVE_JAVASCRIPT_URL}" />
+    <meta property="env:TRANSPERFECT_JAVASCRIPT_URL" content="${TRANSPERFECT_JAVASCRIPT_URL}" />
+    <meta property="env:TRANSPERFECT_KEY" content="${TRANSPERFECT_KEY}" />
+    <meta
+      property="env:LAUNCH_DARKLY_CLIENT_ID"
+      content="${LAUNCH_DARKLY_CLIENT_ID}"
+    />
+    <!-- end Pipeline variables -->
+    <style>
+      /**
+       * Extend the react-native-web reset:
+       * https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/exports/StyleSheet/initialRules.js
+       */
+      html,
+      body,
+      #root {
+        width: 100%;
+        /* To smooth any scrolling behavior */
+        -webkit-overflow-scrolling: touch;
+        margin: 0px;
+        padding: 0px;
+        /* Allows content to fill the viewport and go beyond the bottom */
+        min-height: 100%;
+      }
+      #root {
+        flex-shrink: 0;
+        flex-basis: auto;
+        flex-grow: 1;
+        display: flex;
+        flex: 1;
+      }
+      :root {
+        /* swiper pagination bullet styles */
+        --swiper-pagination-color: #6341A3;
+        --swiper-pagination-bullet-inactive-color: #CED0D9;
+        --swiper-pagination-bullet-inactive-opacity: 1,
+      }
+
+      html {
+        scroll-behavior: smooth;
+        /* Prevent text size change on orientation change https://gist.github.com/tfausak/2222823#file-ios-8-web-app-html-L138 */
+        -webkit-text-size-adjust: 100%;
+        height: calc(100% + env(safe-area-inset-top));
+      }
+
+      body {
+        display: flex;
+        /* Allows you to scroll below the viewport; default value is visible */
+        overflow-y: auto;
+        overscroll-behavior-y: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-overflow-style: scrollbar;
+      }
+      /* Enable for apps that support dark-theme */
+      /*@media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+        }
+      }*/
+      #talkative-engage {
+        display: none;
+      }          
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s) {
+        if (f.fbq) return;
+        
+        n=f.fbq=function(){
+          n.callMethod ? n.callMethod.apply(n,arguments): n.queue.push(arguments)
+        };
+      
+        if(!f._fbq) f._fbq=n;
+        
+        n.push=n;
+        n.loaded=!0;
+        n.version='2.0';
+        n.queue=[];
+        
+        t=b.createElement(e);
+        t.async=!0;
+        t.src=v;
+        
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      
+      fbq('init', '1347204062289469');
+      fbq('track', 'PageView');
+    </script>
+    
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+      src="https://www.facebook.com/tr?id=1347204062289469&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WT84C3B"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    <!-- 
+      A generic no script element with a reload button and a message.
+      Feel free to customize this however you'd like.
+    -->
+    <noscript>
+      <form
+        action=""
+        style="
+          background-color: #fff;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+        "
+      >
+        <div
+          style="
+            font-size: 18px;
+            font-family: Helvetica, sans-serif;
+            line-height: 24px;
+            margin: 10%;
+            width: 80%;
+          "
+        >
+          <p>Oh no! It looks like JavaScript is not enabled in your browser.</p>
+          <p style="margin: 20px 0;">
+            <button
+              type="submit"
+              style="
+                background-color: #4630eb;
+                border-radius: 100px;
+                border: none;
+                box-shadow: none;
+                color: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                line-height: 20px;
+                padding: 6px 16px;
+              "
+            >
+              Reload
+            </button>
+          </p>
+        </div>
+      </form>
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+    <script>
+      var talkativeJavascriptURL = '${TALKATIVE_JAVASCRIPT_URL}';
+      talkativeJavascriptURL =
+      talkativeJavascriptURL.indexOf('$') > -1
+            ? 'https://us.engage.app/api/ecs/v1/loader/93c017d2-a496-4b71-9ef4-25789b0c867c.js'
+            : talkativeJavascriptURL;      
+      var pathQueryParameter = '?path='+encodeURIComponent(window.location.origin+window.location.pathname)
+      var ecsSelectedVersion = (new URLSearchParams(window.location.search)).get('ecsSelectedVersion') || ''
+      var selectedVersionQueryParameter = '&selectedVersion='+ecsSelectedVersion
+
+      import(talkativeJavascriptURL+pathQueryParameter+selectedVersionQueryParameter)                       
+    </script>
+  </body>
+</html>

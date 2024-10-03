@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClaimBilling><!--should match rule identifier -->
+    <NcpdpRequest>
+        <S_HD>
+            <F_101_A1>610749</F_101_A1><!--BIN-->
+            <F_102_A2>D0</F_102_A2><!--VersionReleaseNumber-->
+            <F_103_A3>[TransactionCode]</F_103_A3><!--TransactionCode-->
+            <F_104_A4>PH  TESTRX</F_104_A4><!--ProcessorControlNumber-->
+            <F_109_A9>1</F_109_A9><!--TransactionCount-->
+            <F_202_B2>01</F_202_B2><!--ServiceProviderIDQualifier-->
+            <F_201_B1>[ServiceProviderID]</F_201_B1><!--ServiceProvider-->
+            <F_401_D1>[DateofService]</F_401_D1><!--DateofService-->
+            <F_110_AK>          </F_110_AK><!--SoftwareVendorCertificationID-->
+            <F_501_F1>A</F_501_F1><!--HeaderResponseStatus-->
+        </S_HD>
+        <S_04>
+            <F_302_C2>[CardHolderID]</F_302_C2><!--CardHolderID-->
+            <F_301_C1>[GroupNumber]</F_301_C1><!--GroupNumber-->
+            <F_303_C3>[PersonCode]</F_303_C3><!--PersonCode-->
+        </S_04>
+        <S_01>
+            <F_304_C4>[DateofBirth]</F_304_C4><!--DateOfBirth-->
+            <F_305_C5>[GenderCode]</F_305_C5><!--GenderCode-->
+            <F_310_CA>[FirstName]</F_310_CA><!--FirstName-->
+            <F_311_CB>[LastName]</F_311_CB><!--LastName-->
+            <F_322_CM /><!--StreetAddress-->
+            <F_323_CN /><!--City-->
+            <F_324_CO /><!--State-->
+            <F_325_CP /><!--Zip-->
+            <F_326_CQ /><!--PhoneNumber-->
+        </S_01>
+        <S_07>
+            <F_455_EM>1</F_455_EM><!---->
+            <F_402_D2>[RxNumber]</F_402_D2><!--RxNumber-->
+            <F_436_E1>03</F_436_E1><!--//ProduceOrSvcIDQualifier-->
+            <F_407_D7>[ProductOrSvcID]</F_407_D7><!--ProductOrSvcID--><!--//NDC-->
+            <F_442_E7>[Quantity]</F_442_E7><!--Quantity-->
+            <F_403_D3>[FillNumber]</F_403_D3><!--FillNumber-->
+            <F_405_D5>[DaysSupply]</F_405_D5><!--DaysSupply-->
+            <F_406_D6 /><!---->
+            <F_408_D8>0</F_408_D8><!--//DispensedAsWritten-->
+            <F_414_DE /><!--DatePrescriptionWritten-->
+            <F_415_DF>[NumberOfRefillsAuthorized]</F_415_DF><!--NumberOfRefillsAuthorized-->
+            <F_419_DJ />
+            <F_354_NX />
+        </S_07>
+        <S_11>
+            <F_409_D9 /><!--SubmittedIngredientCost-->
+            <F_412_DC /><!--SubmittedDispenseFee-->
+            <F_433_DX />
+            <F_478_H7 /><!--SubmittedOtherAmountCount-->
+            <F_426_DQ>[UsualandCustomary]</F_426_DQ><!--UsualandCustomary-->
+            <F_430_DU /><!--SubmittedGrossAmountDue-->
+            <F_423_DN /><!--SubmittedBasisOfCostDetermination-->
+        </S_11>
+        <S_03>
+            <F_466_EZ>01</F_466_EZ><!--PrescriberIDQualifier-->
+            <F_411_DB>[PrescriberID]</F_411_DB><!--PrescriberID-->
+        </S_03>
+        <S_02>
+            <F_444_E9></F_444_E9><!--ProviderID--><!--//??-->
+        </S_02>
+    </NcpdpRequest>
+    <NcpdpResponse>
+        <S_HD>
+            <F_101_A1>4682</F_101_A1><!--PrescriberID-->
+            <F_102_A2>D0</F_102_A2><!--VersionReleaseNumber-->
+            <F_103_A3>[TransactionCode]</F_103_A3><!--TransactionCode-->
+            <F_104_A4>PH  TESTRX</F_104_A4><!--ProcessorControlNumber-->
+            <F_109_A9>1</F_109_A9><!--TransactionCount-->
+            <F_202_B2>01</F_202_B2><!--ServiceProviderIDQualifier-->
+            <F_201_B1>[ServiceProviderID]</F_201_B1><!--ServiceProviderID-->
+            <F_401_D1>2019-08-30</F_401_D1><!--DateofService-->
+            <F_110_AK>          </F_110_AK><!--SoftwareVendorCertificationID-->
+            <F_501_F1></F_501_F1><!--HeaderResponseStatus-->
+        </S_HD>
+        <S_21>
+            <F_112_AN>[TransactionResponseStatus]</F_112_AN><!--TransactionResponseStatus-->
+            <F_503_F3>[AuthorizationNumber]</F_503_F3><!--AuthorizationNumber-->
+        </S_21>
+        <S_22>
+            <F_455_EM>1</F_455_EM>
+            <F_402_D2>[RxNumber]</F_402_D2><!--RxNumber-->
+            <F_551_9F />
+        </S_22>
+        <S_23>
+            <F_505_F5>[PatientPayAmount]</F_505_F5><!--PatientPayAmount-->
+            <F_506_F6>[IngredientCostPaid]</F_506_F6><!--IngredientCostPaid-->
+            <F_507_F7>0</F_507_F7><!--DispenseFee-->
+            <F_563_J2 /><!---->
+            <F_509_F9>[TotalAmountPaid]</F_509_F9><!--TotalAmountPaid-->
+            <F_522_FM>03</F_522_FM><!--BasisOfReimbursement-->
+            <F_518_FI>10</F_518_FI><!--CopayAmount-->
+        </S_23>
+    </NcpdpResponse>
+    <Additional>
+        <ORIG_AUTH>[OriginalAuthorizationNumber]</ORIG_AUTH><!--OriginalAuthorizationNumber-->
+        <PLAN_TTL_PAID>[PlanTotalPaid]</PLAN_TTL_PAID><!--PlanTotalPaid-->
+        <LABEL_NAME>[DrugLabelName]</LABEL_NAME><!--DrugLabelName-->
+        <PHARM_NAME>[PharmacyName]</PHARM_NAME><!--PharmacyName-->
+        <PAPER_CLAIM>0</PAPER_CLAIM><!--PaperClaimIndicator-->
+        <DMR_CLAIM>0</DMR_CLAIM><!--DirectMemberReimbursementIndicator-->
+        <TEST_CLAIM>1</TEST_CLAIM><!--TestClaimIndicator-->
+        <PROC_SIG>S</PROC_SIG><!--SIGValueUsedToProcessTheClaim-->
+        <COUPUSES>0</COUPUSES><!--NumberOfCouponUsesForTheClaim-->
+        <COMB_COUPUSES>0</COMB_COUPUSES><!--CombinedCouponUsesForTheclaim-->
+        <PHARM_CHAIN /><!--//PharmacyChain-->
+        <NTWK_PHARM>1</NTWK_PHARM><!--//IsNetworkPharmacy-->
+        <PLAN_INGR_COST>0</PLAN_INGR_COST><!--PlanIngredientCost-->
+        <PLAN_DISP_FEE>0.00</PLAN_DISP_FEE><!--PlanDispensingFee-->
+        <PLAN_SALES_TAX>0.00</PLAN_SALES_TAX><!--//Salestax-->
+        <PLAN_GAP>0.0</PLAN_GAP><!--PlanGrossAmountPaid-->
+        <PLAN_BAS_REIMB>03</PLAN_BAS_REIMB><!--PanBasisOfReimbursement-->
+        <DR_DEA>BA5018406</DR_DEA><!--DEANumberOfPrescriber-->
+        <CARD_VALUE>0.00</CARD_VALUE><!--DebitCardValue-->
+        <PA_IND />
+        <ALT_PROC_BYPASS>0</ALT_PROC_BYPASS>
+        <ECC_REJ_1 />
+        <ECC_REJ_2 />
+        <ECC_REJ_3 />
+        <ECC_REJ_4 />
+        <ECC_REJ_5 />
+        <PC_USER_ID />
+        <PC_RECVD_DATE1 />
+        <PC_RECVD_DATE2 />
+        <PC_REF_CODE />
+    </Additional>
+</ClaimBilling>

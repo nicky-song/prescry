@@ -1,0 +1,176 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Starts:
+      //      group:guest-api
+      //      guest-web
+      "label": "start-group:guest-web",
+      "dependsOn": ["start-group:guest-api", "start:guest-web"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      // Starts:
+      //      guest-api
+      // Compiles:
+      //     common
+      "label": "start-group:guest-api",
+      "dependsOn": ["start:guest-api", "watch:compile:common"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      // Starts:
+      //      guest-web
+      "label": "start:guest-web",
+      "type": "yarn",
+      "task": "start:guest-web",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      // Starts:
+      //      guest-api
+      "label": "start:guest-api",
+      "type": "yarn",
+      "task": "start:guest-api",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      // Compiles:
+      //      group:guest-api
+      //      guest-web
+      "label": "watch-group:compile:guest-web",
+      "dependsOn": ["watch-group:compile:guest-api", "watch:compile:guest-web"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"],
+      "isBackground": true
+    },
+    {
+      // Compiles:
+      //      common
+      //      guest-api
+      "label": "watch-group:compile:guest-api",
+      "dependsOn": ["watch:compile:common", "watch:compile:guest-api"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"],
+      "isBackground": true
+    },
+    {
+      // Compiles:
+      //      guest-api
+      "type": "yarn",
+      "label": "watch:compile:guest-api",
+      "task": "watch:compile:guest-api",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      // Compiles:
+      //      guest-web
+      "label": "watch:compile:guest-web",
+      "type": "yarn",
+      "task": "watch:compile:guest-web",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      // Compiles:
+      //      common
+      "label": "watch:compile:common",
+      "type": "yarn",
+      "task": "watch:common",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      // Tests:
+      //      group:guest-api
+      //      guest-web
+      "label": "watch-group:test:guest-web",
+      "dependsOn": ["watch-group:test:guest-api", "watch:test:guest-web"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"],
+      "isBackground": true
+    },
+    {
+      // Tests:
+      //      common
+      //      guest-api
+      "label": "watch-group:test:guest-api",
+      "dependsOn": ["watch:test:common", "watch:test:guest-api"],
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"],
+      "isBackground": true
+    },
+    {
+      // Tests:
+      //      guest-api
+      "label": "watch:test:guest-api",
+      "type": "yarn",
+      "task": "watch:test:guest-api",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      // Tests:
+      //      guest-web
+      "label": "watch:test:guest-web",
+      "type": "yarn",
+      "task": "watch:test:guest-web",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      // Tests:
+      //      common
+      "type": "yarn",
+      "label": "watch:test:common",
+      "task": "test:common",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "isBackground": true
+    }
+  ]
+}

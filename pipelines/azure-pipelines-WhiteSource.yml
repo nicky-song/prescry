@@ -1,0 +1,119 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  azureContainerRegistry: prescryptivecontainerregistry.azurecr.io
+  azureSubscriptionEndpoint: rg-service-connection-rg-registry-prescryptivehealth-centralus-prod
+
+  BASE: prescryptive-ux-experiences/
+  BUILDID: $(Build.BuildNumber)
+  MAJOR_VERSION: 1
+  REGISTRY: $(azureContainerRegistry)/
+  TAG: $(MAJOR_VERSION).$(BUILDID)
+  USERNAME: ci
+
+  Root.path: $(System.DefaultWorkingDirectory)
+  Api.image: guest-member-api:$(TAG)
+  Api.path: $(Root.path)/packages/guest-member-api
+  Api.container: api-container-$(BUILDID)
+
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: 16.13.2
+
+  - task: npmAuthenticate@0
+    inputs:
+      workingFile: .npmrc
+    condition: succeeded()
+
+  - script: |
+      npm install -g yarn
+    displayName: 'install Yarn'
+    failOnStderr: true
+    continueOnError: false
+
+  - script: |
+      yarn global add expo-cli@6.1.0
+    displayName: 'install Expo CLI'
+    failOnStderr: false
+    continueOnError: false
+
+  - task: Cache@2
+    inputs:
+      key: '"yarn" | "$(Agent.OS)" | **/yarn.lock'
+      path: $(YARN_CACHE_FOLDER)
+      cacheHitVar: CACHE_RESTORED
+    displayName: Cache Yarn packages
+    condition: succeeded()
+
+  ############################ INSTALL DEPENDENCIES
+
+  - script: |
+      yarn setup:options
+    displayName: 'install dependencies'
+    workingDirectory: .
+    condition: and(succeeded(), ne(variables.CACHE_RESTORED, 'true'))
+    continueOnError: false
+
+  ############################ BUILD
+
+  - script: |
+      yarn build:ci
+    displayName: 'build - api'
+    workingDirectory: ./packages/guest-member-api
+    condition: succeeded()
+    continueOnError: false
+
+  - script: |
+      yarn web:build
+    displayName: 'build - web'
+    workingDirectory: ./packages/myrx
+    condition: succeeded()
+    continueOnError: false
+
+  - task: CopyFiles@2
+    inputs:
+      sourceFolder: ./packages/myrx/web-build
+      targetFolder: ./pipelines/build
+    condition: succeeded()
+    continueOnError: false
+
+  ############################ WhiteSource Scan
+
+  - script:
+      'curl -LJO
+      https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar'
+    displayName: 'Download the latest Unified Agent'
+
+  - script:
+      'java -jar wss-unified-agent.jar -d ./packages/myrx -c
+      WhiteSource-NPM.config -apiKey $(whitesource-apikey) -project
+      Prescryptive-experiences-myrx-web -product Consumer-Web'
+    displayName: 'Run Unified Agent Scan web'
+
+  - script:
+      'java -jar wss-unified-agent.jar -d ./packages/guest-member-api -c
+      WhiteSource-NPM.config -apiKey $(whitesource-apikey) -project
+      Prescryptive-experiences-member-api -product Consumer-Service-External'
+    displayName: 'Run Unified Agent Scan API'
+
+  - script:
+      'java -jar wss-unified-agent.jar -d ./packages/common -c
+      WhiteSource-NPM.config -apiKey $(whitesource-apikey) -project
+      Prescryptive-experiences-common-web -product Consumer-Web'
+    displayName: 'Run Unified Agent Scan common'
+
+  - script:
+      'java -jar wss-unified-agent.jar -d . -c WhiteSource-NPM.config -apiKey
+      $(whitesource-apikey) -project Prescryptive-experiences-myrx -product
+      Consumer-Web'
+    displayName: 'Run Unified Agent Scan MyRx'

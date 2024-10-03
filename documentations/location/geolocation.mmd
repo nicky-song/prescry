@@ -1,0 +1,65 @@
+graph TD
+A1([Local Storage]) --> B1[ILocationCoordinates]
+B1 --> |zipCode| C1{userLocation}
+B1 --> |latitude| C1{userLocation}
+B1 --> |longitude| C1{userLocation}
+B1 --> |city| C1{userLocation}
+B1 --> |state| C1{userLocation}
+
+A2([Session Context]) --> B2[ILocationCoordinates]
+B2 --> |zipCode| C2{userLocation}
+B2 --> |latitude| C2{userLocation}
+B2 --> |longitude| C2{userLocation}
+B2 --> |city| C2{userLocation}
+B2 --> |state| C2{userLocation}
+C2 --> |exists| D2[getNearestGeolocation]
+D2 --> |call| E2([coordinates])
+E2 --> |success| A1
+E2 --> |success| A2
+E2 --> |failure| L2{reset}
+C2 --> |undefined| F2[lastZipCode]
+F2 --> |exists| G2[getNearestGeolocation]
+G2 --> |call| H2([zipCode])
+H2 --> |success| A1
+H2 --> |success| A2
+H2 --> |failure| L2{reset}
+F2 --> |undefined| I2[getNearestGeolocation]
+I2 --> |call| J2([IP Stack])
+J2 --> |success| A1
+J2 --> |success| A2
+J2 --> |failure| L2{reset}
+L2 --> |undefined| A1
+L2 --> |undefined| A2
+
+A2 --> |useSessionContext| A3
+A3([ShoppingPickAPharmacyScreen])
+A3 --> B3{userLocation}
+B3 --> |undefined| C3([prescriptionInfo.zipCode])
+C3 --> |exists| D3[getUserLocationDispatch]
+D3 --> |call| E3([prescriptionInfo.zipCode])
+E3 --> B2
+
+A3 --> |useEffect| F3[pharmacyFilterPreferences,coordinates,selectedConfiguration]
+F3 --> G3[navigation.isFocused]
+G3 --> |call| H3[getDrugPrice]
+
+A3 --> |useState| I3[userZipCode]
+I3 --> |input| J3[setUserZipCode]
+J3 --> |call| K3[getGeolocationData]
+K3 --> B2
+
+A2 --> |useSessionContext| A4
+A4([DrugSearchPickAPharmacyScreen])
+A4 --> B4{userLocation}
+B4 --> |undefined| C4[handleFetchUserPosition]
+C4 --> |call| D4([coordinates])
+D4 --> B2
+
+A4 --> |useEffect| F4[pharmacyFilterPreferences,coordinates,selectedConfiguration]
+F4 --> G4[navigation.isFocused]
+G4 --> |call| H4[getPrescriptionPharmacies]
+
+A4 --> |useState| I4[userZipCode]
+I4 --> |input| J4[setUserZipCode]
+J4 --> |call| K4[getGeolocationData]
+K4 --> B2

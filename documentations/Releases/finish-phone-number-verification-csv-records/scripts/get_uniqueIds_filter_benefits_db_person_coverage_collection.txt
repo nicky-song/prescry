@@ -1,0 +1,17 @@
+use Benefit
+
+var uniqueIds = ''
+var uniqueIdsCount = 0
+db.getCollection("PersonCoverage").find(
+{
+    // insert filter generated from script: script_final_v1.txt
+    // { uniqueId: { $in: ['P04255169005','T4255169005','9HP000467125'] }, terminationDate: ''}
+}
+).forEach(function(doc) {
+    print('Processing uniqueId: ' + doc.uniqueId)
+    uniqueIds = uniqueIds.concat("'"+doc.uniqueId+"',")
+    uniqueIdsCount++      
+});
+
+print("Filter to use RxAssistant DB/Person Collection and generate cvs file in Studio3t: " + "{ 'primaryMemberRxId': { $in: [" + uniqueIds.slice(0,-1) + "] } }")
+print("uniqueIdsCount: " + uniqueIdsCount)

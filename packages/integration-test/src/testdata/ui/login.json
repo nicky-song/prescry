@@ -1,0 +1,51 @@
+{
+  "waitlist_mobile_number": "X4257128625",
+  "mobile_number": "X4444444444",
+  "country_code_mobile": "+1",
+  "landline_number": "4253723214",
+  "pin_no": "1234",
+  "login_with_invalid_number": {
+    "short_number": {
+      "mobile_number": "X12345",
+      "terms_condition_flag": true
+    },
+    "alphanumeric_number": {
+      "mobile_number": "123abcd",
+      "terms_condition_flag": true
+    },
+    "empty_number": {
+      "mobile_number": " ",
+      "terms_condition_flag": true
+    },
+    "without_accepting_terms_and_conditions": {
+      "mobile_number": "X2222222222",
+      "terms_condition_flag": false
+    }
+  },
+  "login_with_invalid_otp": {
+    "short_otp": {
+      "negative_test_data": {
+        "otp": "1234",
+        "otp_type": "invalid"
+      }
+    },
+    "empty_otp": {
+      "negative_test_data": {
+        "otp": "  ",
+        "otp_type": "invalid"
+      }
+    },
+    "alphanumeric_otp": {
+      "negative_test_data": {
+        "otp": "123abc",
+        "otp_type": "invalid"
+      }
+    },
+    "wrong_otp": {
+      "negative_test_data": {
+        "otp": "123456",
+        "otp_type": "wrong"
+      }
+    }
+  }
+}

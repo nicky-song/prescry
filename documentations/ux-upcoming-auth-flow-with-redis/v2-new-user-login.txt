@@ -1,0 +1,42 @@
+title New User Login Flow 
+
+actor Client
+
+Client->UI:Click on the welcome message link
+activate Client
+activate UI
+UI -> API Server: Login Request
+
+activate API Server
+activate Middleware
+API Server -> Middleware : Request user verification
+Middleware ->Middleware : Validate User
+
+alt  user verified
+
+Middleware --> Redis : Create Session. Create user object.
+
+note right of Redis :{"session_id1": {"cookie": {"originalMaxAge": 360000,\n "expires": "2019-09-19T09:57:47.326Z"}, "views": 0,"key": "identifier1"}}
+
+note right of Redis :{"identifier1": {"firstName": "user_first_name","lastName": "user_last_name",\n "isPhoneNumberVerified": false,  "phoneNumber": "user_phone_number", \n "isPrimary": true,"email": "user_email_id","currentSessionId": "session_id1", isDeviceVerified : false}}
+
+else user NOT verified
+
+Middleware --> Redis : Create Session with updated viewCount. 
+
+alt login attempt <= 3
+
+note right of Redis :{"session_id": {"cookie": {"originalMaxAge": null,"expires": null},"views": 1}}
+
+else login attempt > 3
+
+note right of Redis :{"session_id": {"cookie": {"originalMaxAge": 600000,"expires": "2019-09-19T10:07:47.326Z"}, \n "views": 3,"status": "blocked"}}
+
+end
+
+end
+Middleware ->API Server : (sessionId)
+deactivate Middleware
+
+API Server -> UI :  Response(set cookie with sessionId)
+deactivate API Server

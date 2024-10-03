@@ -1,0 +1,33 @@
+{
+  "medicationSavings": [
+    {
+      "name": "BASAGLAR KwikPen",
+      "description": {
+        "quantity": "100units/mL Pre-Filled Pen (Refrigerated)",
+        "package": "for 1 Box, 5 x 3mL pens each"
+      },
+      "smartPrice": "$202.02",
+      "competitorPrice": "$250.91"
+    },
+    {
+      "name": "Humalog",
+      "description": {
+        "quantity": "100units/ml Solution for Injection (Refrigerated)",
+        "package": "for 1 Vial, 10mL each"
+      },
+      "smartPrice": "$182.39",
+      "competitorPrice": "$278.91"
+    },
+    {
+      "name": "Trulicity",
+      "description": {
+        "quantity": "0.75mg/0.5ml Solution for Injection (Refrigerated)",
+        "package": "for 1 Box, 4 x 0.5mL pens each"
+      },
+      "smartPrice": "$601.50",
+      "competitorPrice": "$839.25"
+    }
+  ],
+  "title": "Save up to 55%",
+  "subtitle": "on Diabetes medications, starting at:"
+}

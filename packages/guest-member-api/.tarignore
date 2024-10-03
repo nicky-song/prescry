@@ -1,0 +1,12 @@
+/.*
+documentations
+node_modules
+packages/myrx
+packages/stacks
+node_modules
+**/node_modules
+lib
+.jest
+build
+*.log
+coverage

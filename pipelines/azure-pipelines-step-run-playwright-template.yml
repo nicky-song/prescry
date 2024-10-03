@@ -1,0 +1,36 @@
+steps:
+  - script: |
+      npx playwright test --grep @exec
+    displayName: 'Run Playwright basic test'
+    env:
+      DATABASE_CONNECTION_STRING: $(connectionstring-cdbm-lead2order)
+      DATABASE_NAME: 'RxAssistant_test'
+      BENEFIT_DATABASE_NAME: 'Benefit'
+      MYRX_REDIS_HOST: 'redis-myrx-westus-test.redis.cache.windows.net'
+      MYRX_REDIS_ACCESS_KEY: $(myrx-ux-redis-auth-pass)
+      MYRX_REDIS_PORT: 6380
+      AUTH0_API_CLIENT_ID: $(myrx-api-auth0-client-id)
+      AUTH0_API_CLIENT_SECRET: $(myrx-api-auth0-client-secret)
+      AUTH0_TOKEN_API: 'https://phxqa2.us.auth0.com/oauth/token'
+      AUTH0_AUDIENCE_CLAIMS: 'https://claimhistory.test.prescryptive.io'
+      AUTH0_AUDIENCE_ACCUMULATORS: 'https://accumulator.test.prescryptive.io'
+      AUTH0_AUDIENCE_IDENTITY: 'https://identity.test.prescryptive.io'
+      PLATFORM_GEARS_API_URL: 'https://gears.test.prescryptive.io'
+      MY_PRESCRYPTIVE_URL: 'test.myprescryptive.com:443'
+      GEARS_API_SUBSCRIPTION_KEY: $(gears-dds-myrx-api-subscription-key)
+      PHARMACY_PORTAL_API_TENANT_ID: '' # use values
+      PHARMACY_PORTAL_API_CLIENT_ID: '' # use values
+      PHARMACY_PORTAL_API_CLIENT_SECRET: $(myrx-ux-pharmacy-portal-service-client-secret)
+      PHARMACY_PORTAL_API_SCOPE: '' # use values
+      PHARMACY_PORTAL_BASE_API_URL: 'https://pharmacy.test.prescryptive.io'
+      CLAIM_ALERT_URL: 'api.test.prescryptive.io'
+      CLAIM_ALERTS_ACCESS_TOKEN: $(claim-alert-access-token)
+      USE_AUTOMATION: true
+      TWILIO_VERIFICATION_SERVICE_ID: $(token-twilio-service-sid-verify-onetimepassword)
+      TWILIO_ACCOUNT_SID: $(twilio-account-automation-test-sid)
+      TWILIO_AUTH_TOKEN: $(twilio-account-automation-test-auth-token)
+      LOAD_APPSETTINGS: true
+      JWT_TOKEN_EXPIRES_IN: 36000
+      JWT_TOKEN_SECRET_KEY: $(private-key-rsa-2048-jwt-ux-prescryptive)
+      CI: true
+    workingDirectory: './packages/testing'

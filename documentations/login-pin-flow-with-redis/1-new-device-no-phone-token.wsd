@@ -1,0 +1,132 @@
+title New Device Login/Register Flow ( No Phone Token ) ( Token + Redis Store )
+
+actor Client
+
+Client->UI:Click on the welcome message link
+activate Client
+activate UI
+
+UI -> UI: User Enter Phone Number
+
+UI -> API Server: Send One Time Password
+
+
+UI -> UI: User enter code on One time password verification screen.
+
+UI -> API Server: Verify One Time Password
+
+API Server -> UI : Send Phone token
+
+UI -> API Server: Get user based on the phone token ( Account token will be missing )
+
+activate API Server
+
+alt  No Member Found
+
+API Server -> UI:  Return No member found 
+
+UI -> UI: Navigate to Login Screen
+
+UI -> API Server: Send user details
+
+API Server -->API Server : Validate user details
+
+alt if user not found 
+
+API Server -> UI: Failure Response ( Not Found )
+
+UI -->UI: Remain on Login screen and show error message.
+
+else  if user found but already have phone number registered
+
+API Server -> UI: Failure Response ( Unauthorized Request )
+
+UI -->UI: Dispatch to fatal error screen and clear phone token.
+
+else user found and doesn't have registered number
+
+
+API Server -> Redis : Add newly registered user details into redis.
+ 
+API Server --> API Server : Send message to service bus to associate phone number with user in person Collection.
+
+UI -> UI: Create Pin Screen
+
+UI -> UI: Verify Pin Screen
+
+UI -> API Server: Encrypted Pin (phone token + number )
+
+API Server -> Redis : Update pin in user details object.
+
+API Server --> API Server : Send message to service bus to associate pin with phone number account Collection.
+
+UI ->API Server : Get member contact info
+
+API Server --> API Server : Find user in the cosmos database or return from the Redis. Generate token based on it.
+
+API Server -> UI: Send user details and account token ( 30 min expiry ).
+
+end
+
+else 1 Member found
+
+API Server -> UI:  Return member details found message with account token ( 30 min expiry and isPinVerified flag as false) and flag whether pin was already set or not.
+
+alt No Pin in system
+
+UI -> UI: Create Pin Screen
+
+UI -> UI: Verify Pin Screen
+
+UI -> API Server: Encrypted Pin (phone token + number )
+
+API Server -> Redis : Update pin in user details object.
+
+API Server --> API Server : Send message to service bus to associate pin with phone number account Collection.
+
+UI ->API Server : Get member contact info
+
+API Server --> API Server : Find user in the cosmos database or return from the Redis. Generate token based on it.
+
+API Server -> UI: Send user details and account token ( 30 min expiry ).
+
+
+else Pin was already Set
+
+UI -> UI: Enter Pin screen
+
+UI ->API Server : Verify pin based on the phone number present in the token. 
+
+alt  Success
+
+API Server -> UI: Send updated token. with isPinVerified flag as true .
+
+else Failure  ( attempts < 5 )
+
+API Server -> UI :Update pin verification attempts in the account token.
+
+else Failure  ( attempts = 5 )
+
+API Server -> UI : throw custom failure code and redirect user to  Forget pin screen .
+
+
+UI -> UI: On click of reset , clear account token from storage and redirect to login.
+
+end
+
+
+end
+
+else  Multiple members found
+
+API Server -> UI: Return the first member details from the list 
+
+UI -> API Server : follow the steps described in above use case when 1 Member was found.
+
+
+
+end
+
+
+
+deactivate API Server

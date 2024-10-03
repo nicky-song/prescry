@@ -1,0 +1,40 @@
+{
+  "familyId": "",
+  "uniqueId": "",
+  "personCode": "01",
+  "firstName": "",
+  "lastName": "",
+  "middleInitial": "",
+  "gender": "F",
+  "birthDate": "20000501",
+  "ssn": "",
+  "emailAddress": "",
+  "address1": "SOME ADDRESS IN BELLEVUE",
+  "address2": "",
+  "city": "BELLEVUE",
+  "state": "WA",
+  "zip": "98004",
+  "country": "",
+  "homePhone": "",
+  "mobilePhone": "",
+  "brokerAssociation": "CON01",
+  "sponsorOrganization": "CONFLUENCE",
+  "group": "1002G52",
+  "subGroup": "CON03",
+  "relationshipCode": "PRIMARY",
+  "otherCoverage": "",
+  "clientRiderCode": "",
+  "clientDefinedField1": "",
+  "clientDefinedField2": "",
+  "languageCode": "",
+  "orderIdCard": "",
+  "testMember": true,
+  "department": "",
+  "updatedAt": {
+    "$date": 1639694181050
+  },
+  "journiOptIn": false,
+  "createdAt": {
+    "$date": 1639692658615
+  }
+}

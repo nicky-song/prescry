@@ -1,0 +1,369 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ux-experience-guest-member
+  namespace: ${TARGET_NAMESPACE}
+  labels:
+    app/prescryptive-ux-experiences: ux-experience-guest-member
+    service/prescryptive-ux-experiences: ux-experience-guest-member
+type: Opaque
+data:
+  APPINSIGHTS_INSTRUMENTATION_KEY: ${APPINSIGHTS_INSTRUMENTATION_KEY}
+  CERTIFICATE_PFX_FILE: ${CERTIFICATE_PFX_FILE}
+  CERTIFICATE_PFX_PASS: ${CERTIFICATE_PFX_PASS}
+  AUTH0_API_CLIENT_ID: ${AUTH0_API_CLIENT_ID}
+  AUTH0_API_CLIENT_SECRET: ${AUTH0_API_CLIENT_SECRET}
+  DATABASE_CONNECTION: ${DATABASE_CONNECTION}
+  JWT_TOKEN_SECRET_KEY: ${JWT_TOKEN_SECRET_KEY}
+  SERVICE_BUS_CONNECTION_STRING: ${SERVICE_BUS_CONNECTION_STRING}
+  TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID}
+  TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN}
+  TWILIO_VERIFICATION_SERVICE_ID: ${TWILIO_VERIFICATION_SERVICE_ID}
+  TWILIO_EMAIL_VERIFICATION_SERVICE_ID: ${TWILIO_EMAIL_VERIFICATION_SERVICE_ID}
+  REDIS_AUTH_PASS: ${REDIS_AUTH_PASS}
+  HEALTHBOT_APP_SECRET: ${HEALTHBOT_APP_SECRET}
+  HEALTHBOT_WEBCHAT_SECRET: ${HEALTHBOT_WEBCHAT_SECRET}
+  PAYMENTS_KEY_PRIVATE: ${PAYMENTS_KEY_PRIVATE}
+  PAYMENTS_KEY_PRIVATE_TEST: ${PAYMENTS_KEY_PRIVATE_TEST}
+  PHARMACY_PORTAL_API_CLIENT_SECRET: ${PHARMACY_PORTAL_API_CLIENT_SECRET}
+  SENDGRID_API_KEY: ${SENDGRID_API_KEY}
+  PLATFORM_PHARMACY_LOOKUP_API_KEY: ${PLATFORM_PHARMACY_LOOKUP_API_KEY}
+  PLATFORM_PRESCRIPTION_API_HEADER_KEY: ${PLATFORM_PRESCRIPTION_API_HEADER_KEY}
+  PLATFORM_API_CLIENT_ID: ${PLATFORM_API_CLIENT_ID}
+  PLATFORM_API_CLIENT_SECRET: ${PLATFORM_API_CLIENT_SECRET}
+  PLATFORM_API_TENANT_ID: ${PLATFORM_API_TENANT_ID}
+  MYRX_IDENTITY_TENANT_ID: ${MYRX_IDENTITY_TENANT_ID}
+  PLATFORM_API_RESOURCE: ${PLATFORM_API_RESOURCE}
+  PRICING_API_HEADER_KEY: ${PRICING_API_HEADER_KEY}
+  IPSTACK_API_KEY: ${IPSTACK_API_KEY}
+  CONTENT_API_SMARTPRICE_PASSWORD: ${CONTENT_API_SMARTPRICE_PASSWORD}
+  WAYSTAR_INSURANCE_ELIGIBILITY_API_PASSWORD: ${WAYSTAR_INSURANCE_ELIGIBILITY_API_PASSWORD}
+  GEARS_API_SUBSCRIPTION_KEY: ${GEARS_API_SUBSCRIPTION_KEY}
+  MAPBOX_ACCESS_TOKEN: ${MAPBOX_ACCESS_TOKEN}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-ux-experience-guest-member
+  namespace: ${TARGET_NAMESPACE}
+  labels:
+    service/prescryptive-ux-experiences: ux-experience-guest-member
+spec:
+  type: LoadBalancer
+  loadBalancerIP: ${LOADBALANCER_IP}
+  externalTrafficPolicy: Local
+  loadBalancerSourceRanges: ${LOADBALANCER_SOURCE_RANGES_ARRAY}
+  ports:
+    - port: 4300
+      targetPort: 4300
+      protocol: TCP
+      name: api
+  selector:
+    app/prescryptive-ux-experiences: ux-experience-guest-member
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-ux-experience-guest-member
+  namespace: ${TARGET_NAMESPACE}
+  labels:
+    app/prescryptive-ux-experiences: ux-experience-guest-member
+spec:
+  replicas: ${POD_REPLICAS_COUNT}
+  selector:
+    matchLabels:
+      app/prescryptive-ux-experiences: ux-experience-guest-member
+  template:
+    metadata:
+      namespace: ${TARGET_NAMESPACE}
+      labels:
+        app/prescryptive-ux-experiences: ux-experience-guest-member
+    spec:
+      containers:
+        - name: api-ux-experience-guest-member
+          image: prescryptivecontainerregistry.azurecr.io/prescryptive-ux-experiences/guest-member-api:${TAG}
+          ports:
+            - containerPort: 4300
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 40m
+            limits:
+              memory: ${POD_MEMORY_LIMIT}
+              cpu: 400m
+          readinessProbe:
+            httpGet:
+              path: /api/health/ready
+              port: 4300
+              scheme: HTTPS
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            failureThreshold: 3
+            successThreshold: 2
+          livenessProbe:
+            httpGet:
+              path: /api/health/live
+              port: 4300
+              scheme: HTTPS
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            failureThreshold: 3
+            successThreshold: 1
+          env:
+            - name: PORT
+              value: '4300'
+            - name: REDIS_PORT
+              value: '6380'
+            - name: REDIS_PIN_RESET_SCAN_DELETE_COUNT
+              value: '${REDIS_PIN_RESET_SCAN_DELETE_COUNT}'
+            - name: JWT_TOKEN_EXPIRES_IN
+              value: '31536000'
+            - name: DEVICE_TOKEN_EXPIRES_IN
+              value: '31536000'
+            - name: ACCOUNT_TOKEN_EXPIRES_IN
+              value: '1800'
+            - name: REDIS_DEVICE_TOKEN_KEY_EXPIRES_IN
+              value: '31536000'
+            - name: REDIS_PIN_KEY_EXPIRES_IN
+              value: '1800'
+            - name: REDIS_PHONE_NUMBER_REGISTRATION_KEY_EXPIRES_IN
+              value: '1800'
+            - name: REDIS_PIN_VERIFICATION_KEY_EXPIRES_IN
+              value: '3600'
+            - name: REDIS_PERSON_CREATE_KEY_EXPIRES_IN
+              value: '1800'
+            - name: WINSTON_LOG_FILE_PATH
+              value: /var/log/prescryptive-logs/winston.log
+            - name: TOPIC_NAME_UPDATE_PERSON
+              value: topic-person-update
+            - name: TOPIC_NAME_UPDATE_HEALTH_RECORD_EVENT
+              value: topic-health-record-event-update
+            - name: TOPIC_NAME_APPOINTMENT_CANCELLED_EVENT
+              value: topic-appointment-cancellation-requested
+            - name: TOPIC_NAME_UPDATE_ACCOUNT
+              value: topic-account-update
+            - name: TOPIC_NAME_COMMON_BUSINESS_EVENT
+              value: topic-common-business-event
+            - name: TOPIC_NAME_COMMON_MONITORING_EVENT
+              value: topic-common-monitoring-event
+            - name: CANCEL_APPOINTMENT_WINDOW_HOURS
+              value: '6'
+            - name: MAX_PIN_VERIFICATION_ATTEMPTS
+              value: '5'
+            - name: CHILD_MEMBER_AGE_LIMIT
+              value: '13'
+            - name: ORDER_NUMBER_BLOCK_LENGTH
+              value: '100'
+            - name: CONTENT_API_URL
+              value: ${CONTENT_API_URL}
+            - name: GUESTMEMBEREXPERIENCE_CORS_HOSTS
+              value: ${GUESTMEMBEREXPERIENCE_CORS_HOSTS}
+            - name: PAYMENTS_KEY_PUBLIC
+              value: '${PAYMENTS_KEY_PUBLIC}'
+            - name: PAYMENTS_KEY_PUBLIC_TEST
+              value: '${PAYMENTS_KEY_PUBLIC_TEST}'
+            - name: REDIS_HOST
+              value: ${REDIS_HOST}
+            - name: ENVIRONMENT
+              value: ${ENVIRONMENT}
+            - name: TWILIO_MESSAGING_FROM_PHONE_NUMBER
+              value: '${TWILIO_MESSAGING_FROM_PHONE_NUMBER}'
+            - name: TWILIO_REMOVE_WAITLIST_URL
+              value: '${TWILIO_REMOVE_WAITLIST_URL}'
+            - name: ALWAYS_ALLOWED_FEATURE_FLAGS
+              value: '${ALWAYS_ALLOWED_FEATURE_FLAGS}'
+            - name: AUTH0_API_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: AUTH0_API_CLIENT_ID
+            - name: AUTH0_API_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: AUTH0_API_CLIENT_SECRET
+            - name: AUTH0_TOKEN_API
+              value: '${AUTH0_TOKEN_API}'
+            - name: AUTH0_AUDIENCE_ACCUMULATORS
+              value: '${AUTH0_AUDIENCE_ACCUMULATORS}'
+            - name: AUTH0_AUDIENCE_CLAIMS
+              value: '${AUTH0_AUDIENCE_CLAIMS}'
+            - name: AUTH0_AUDIENCE_IDENTITY
+              value: '${AUTH0_AUDIENCE_IDENTITY}'
+            - name: PHARMACY_PORTAL_API_CLIENT_ID
+              value: '${PHARMACY_PORTAL_API_CLIENT_ID}'
+            - name: PHARMACY_PORTAL_API_TENANT_ID
+              value: '${PHARMACY_PORTAL_API_TENANT_ID}'
+            - name: PHARMACY_PORTAL_API_SCOPE
+              value: '${PHARMACY_PORTAL_API_SCOPE}'
+            - name: PHARMACY_PORTAL_API_URL
+              value: '${PHARMACY_PORTAL_API_URL}'
+            - name: PLATFORM_API_URL
+              value: '${PLATFORM_API_URL}'
+            - name: PLATFORM_GEARS_API_URL
+              value: '${PLATFORM_GEARS_API_URL}'
+            - name: IPSTACK_API_URL
+              value: '${IPSTACK_API_URL}'
+            - name: MAPBOX_API_URL
+              value: '${MAPBOX_API_URL}'
+            - name: CONTENT_API_SMARTPRICE_USERNAME
+              value: '${CONTENT_API_SMARTPRICE_USERNAME}'
+            - name: INSURANCE_ELIGIBILITY_API_REQUEST_URL
+              value: '${INSURANCE_ELIGIBILITY_API_REQUEST_URL}'
+            - name: WAYSTAR_INSURANCE_ELIGIBILITY_API_USER_ID
+              value: '${WAYSTAR_INSURANCE_ELIGIBILITY_API_USER_ID}'
+            - name: REDIS_NEARBY_PHARMACIES_KEY_EXPIRES_IN
+              value: '${REDIS_NEARBY_PHARMACIES_KEY_EXPIRES_IN}'
+            - name: REDIS_CMS_CONTENT_KEY_EXPIRES_IN
+              value: '${REDIS_CMS_CONTENT_KEY_EXPIRES_IN}'
+            - name: TALKATIVE_JAVASCRIPT_URL
+              value: '${TALKATIVE_JAVASCRIPT_URL}'
+            - name: TRANSPERFECT_JAVASCRIPT_URL
+              value: '${TRANSPERFECT_JAVASCRIPT_URL}'
+            - name: TRANSPERFECT_KEY
+              value: '${TRANSPERFECT_KEY}'
+            - name: DATABASE_CONNECTION
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: DATABASE_CONNECTION
+            - name: REDIS_AUTH_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: REDIS_AUTH_PASS
+            - name: JWT_TOKEN_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: JWT_TOKEN_SECRET_KEY
+            - name: APPINSIGHTS_INSTRUMENTATION_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: APPINSIGHTS_INSTRUMENTATION_KEY
+            - name: TWILIO_ACCOUNT_SID
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: TWILIO_ACCOUNT_SID
+            - name: TWILIO_AUTH_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: TWILIO_AUTH_TOKEN
+            - name: TWILIO_VERIFICATION_SERVICE_ID
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: TWILIO_VERIFICATION_SERVICE_ID
+            - name: TWILIO_EMAIL_VERIFICATION_SERVICE_ID
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: TWILIO_EMAIL_VERIFICATION_SERVICE_ID
+            - name: SERVICE_BUS_CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: SERVICE_BUS_CONNECTION_STRING
+            - name: CERTIFICATE_PFX_FILE
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: CERTIFICATE_PFX_FILE
+            - name: CERTIFICATE_PFX_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: ux-experience-guest-member
+                  key: CERTIFICATE_PFX_PASS
+            - name: HEALTHBOT_WEBCHAT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: HEALTHBOT_WEBCHAT_SECRET
+                  name: ux-experience-guest-member
+            - name: HEALTHBOT_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: HEALTHBOT_APP_SECRET
+                  name: ux-experience-guest-member
+            - name: PAYMENTS_KEY_PRIVATE
+              valueFrom:
+                secretKeyRef:
+                  key: PAYMENTS_KEY_PRIVATE
+                  name: ux-experience-guest-member
+            - name: PAYMENTS_KEY_PRIVATE_TEST
+              valueFrom:
+                secretKeyRef:
+                  key: PAYMENTS_KEY_PRIVATE_TEST
+                  name: ux-experience-guest-member
+            - name: PHARMACY_PORTAL_API_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: PHARMACY_PORTAL_API_CLIENT_SECRET
+                  name: ux-experience-guest-member
+            - name: SENDGRID_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: SENDGRID_API_KEY
+                  name: ux-experience-guest-member
+            - name: PLATFORM_PRESCRIPTION_API_HEADER_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: PLATFORM_PRESCRIPTION_API_HEADER_KEY
+                  name: ux-experience-guest-member
+            - name: PLATFORM_API_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: PLATFORM_API_CLIENT_ID
+                  name: ux-experience-guest-member
+            - name: PLATFORM_API_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: PLATFORM_API_CLIENT_SECRET
+                  name: ux-experience-guest-member
+            - name: PLATFORM_API_TENANT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: PLATFORM_API_TENANT_ID
+                  name: ux-experience-guest-member
+            - name: PLATFORM_API_RESOURCE
+              valueFrom:
+                secretKeyRef:
+                  key: PLATFORM_API_RESOURCE
+                  name: ux-experience-guest-member
+            - name: PRICING_API_HEADER_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: PRICING_API_HEADER_KEY
+                  name: ux-experience-guest-member
+            - name: IPSTACK_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: IPSTACK_API_KEY
+                  name: ux-experience-guest-member
+            - name: CONTENT_API_SMARTPRICE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: CONTENT_API_SMARTPRICE_PASSWORD
+                  name: ux-experience-guest-member
+            - name: GEARS_API_SUBSCRIPTION_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: GEARS_API_SUBSCRIPTION_KEY
+                  name: ux-experience-guest-member
+            - name: WAYSTAR_INSURANCE_ELIGIBILITY_API_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: WAYSTAR_INSURANCE_ELIGIBILITY_API_PASSWORD
+                  name: ux-experience-guest-member
+            - name: MAPBOX_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: MAPBOX_ACCESS_TOKEN
+                  name: ux-experience-guest-member
+            - name: MYRX_IDENTITY_TENANT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: MYRX_IDENTITY_TENANT_ID
+                  name: ux-experience-guest-member

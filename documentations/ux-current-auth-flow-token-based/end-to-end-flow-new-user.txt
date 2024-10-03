@@ -1,0 +1,61 @@
+ title New User Login Flow 
+
+actor Client
+
+Client->UI:Click on the welcome message link
+activate Client
+activate UI
+UI -> API Server: * Login Screen \n* User will enter his credentials \n* Login Request is sent
+
+activate API Server
+
+API Server --> Database : get user details from database
+
+API Server -->API Server: Verify entered credentials
+
+alt if credentials valid
+
+API Server --> Twilio: request to Send verification code to the registered phone number
+
+Twilio -->Client: Send Verification Code
+
+API Server ->UI : Success Response
+
+UI --> UI : Navigate to PhoneNumberVerificationScreen 
+
+space
+space
+
+Client ->UI : Enters verification code on the PhoneNumberVerificationScreen
+
+UI ->API Server: Send Phone number verification request
+
+API Server -->Twilio: Send Request to verify code
+
+Twilio -->API Server: Verification Service Response
+
+alt code is valid
+
+API Server --> Azure Service Bus : Request to update the phone number verification status in DB
+
+API Server -> UI : Logged in successfully response
+
+UI --> UI : Navigate to Member Contact Info Screen
+
+else invalid code
+
+API Server -> UI : Invalid Code response
+
+UI --> UI : Ask user to enter valid code / resend code
+
+end
+
+else Invalid Credentials
+
+API Server ->UI : Invalid Credentials Response
+
+UI -->UI: Request user to retry login
+
+end
+
+deactivate API Server

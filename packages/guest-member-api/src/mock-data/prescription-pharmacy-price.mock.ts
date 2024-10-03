@@ -1,0 +1,73 @@
+// Copyright 2021 Prescryptive Health, Inc.
+
+import { IPharmacyPrice } from '../models/platform/pharmacy-pricing-lookup.response';
+
+export const prescriptionPharmacyPriceMock1: IPharmacyPrice = {
+  daysSupply: 5,
+  fillDate: '2021-07-16T00:00:00',
+  groupPlanCode: 'HMA01',
+  memberId: 'MOCK-MYRXID',
+  nationalDrugCode: '00186077660',
+  pharmacyId: '4902234',
+  quantity: 50.0,
+  brandGeneric: 'B',
+  drugName: 'Brilinta',
+  copayAmount: 0,
+  inNetwork: 'N',
+  name: 'BARTELL DRUGS #40',
+  patientDeductibleAmount: 0.0,
+  tier: '22',
+  patientAmountDue: 33.7,
+  totalPrice: 337.0,
+};
+export const prescriptionPharmacyPriceMock2: IPharmacyPrice = {
+  daysSupply: 5,
+  fillDate: '2021-07-16T00:00:00',
+  groupPlanCode: 'HMA01',
+  memberId: 'MOCK-MYRXID',
+  nationalDrugCode: '00186077660',
+  pharmacyId: '4921575',
+  quantity: 50.0,
+  brandGeneric: 'B',
+  drugName: 'Brilinta',
+  copayAmount: 0,
+  inNetwork: 'N',
+  name: 'RITE AID PHARMACY # 05176',
+  patientDeductibleAmount: 0.0,
+  tier: '22',
+  patientAmountDue: 36,
+  totalPrice: 340.0,
+  basisOfReimbursementDetermination: '0',
+};
+export const prescriptionPharmacyPriceMock3: IPharmacyPrice = {
+  daysSupply: 20,
+  fillDate: '2021-07-16T00:00:00',
+  groupPlanCode: 'HMA01',
+  memberId: 'MOCK-MYRXID',
+  nationalDrugCode: '00186077660',
+  quantity: 50.0,
+  brandGeneric: 'B',
+  drugName: 'Brilinta',
+  pharmacyId: '3845798',
+  copayAmount: 20,
+  patientAmountDue: 34,
+  totalPrice: 338.0,
+  genericProductIdentifier: 'gpi',
+  inNetwork: 'Y',
+};
+
+export const prescriptionPharmacyPriceMock4: IPharmacyPrice = {
+  daysSupply: 20,
+  fillDate: '2021-07-16T00:00:00',
+  groupPlanCode: 'HMA01',
+  memberId: 'MOCK-MYRXID',
+  nationalDrugCode: '00186077660',
+  quantity: 50.0,
+  brandGeneric: 'B',
+  drugName: 'Brilinta',
+  pharmacyId: '3815341',
+  copayAmount: 20,
+  patientAmountDue: 35,
+  totalPrice: 339.0,
+  genericProductIdentifier: 'gpi',
+};

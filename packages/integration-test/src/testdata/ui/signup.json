@@ -1,0 +1,9 @@
+{
+  "first_name": "test",
+  "last_name": "afour",
+  "email": "afour@gmail.com",
+  "birth_month": "July",
+  "birth_year": "2000",
+  "birth_date": "10",
+  "invalid_email": "abcdgmail.com"
+}

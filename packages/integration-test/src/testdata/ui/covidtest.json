@@ -1,0 +1,136 @@
+{
+  "select_test": {
+    "test_type_1": {
+      "covid_test_selection": "antigen"
+    },
+    "test_type_2": {
+      "covid_test_selection": "medicare"
+    },
+    "test_type_3": {
+      "covid_test_selection": "medicaid"
+    }
+  },
+  "covid_test_and_pharmacy": {
+    "select_covid_test": "covid_test",
+    "zip_code": 90002,
+    "pharmacy_name": "PROVIDER AUTOMATION"
+  },
+  "book_appointment_for": {
+    "myself": "Myself",
+    "dependent": "For another person",
+    "appointment": "myself_dependent"
+  },
+  "survey_form": {
+    "contact_with_someone": "No",
+    "direct_patient_contact": "No",
+    "symptoms": "Yes",
+    "is_pregnant": "No",
+    "currently_reside": "Yes",
+    "had_covid_19_test": "No",
+    "primary_care_provider": "test primary care provider",
+    "primary_care_provider_phone_number": "123456789",
+    "gender": "Female",
+    "ethnicity": "Hispanic or Latino",
+    "race": "Asian",
+    "medicaid_medicare_id": "12345678",
+    "eligible_to_receive_vaccine": "Yes",
+    "primary_healthcare_insurance": "Private insurance",
+    "insurance_name_policy_id": "test 1234",
+    "mothers_maiden_name": "testname"
+  },
+  "payment": {
+    "email": "test@testprescryptive.com",
+    "card_number": "4242424242424242",
+    "card_expiry": "10/23",
+    "cvc_number": "123",
+    "name_on_card": "testname",
+    "country_name": "India"
+  },
+  "address_info": {
+    "address": "testAddress",
+    "city": "testCity",
+    "state": "AK",
+    "address_zip_code": "12345",
+    "county": "countyName"
+  },
+  "appointment_confirmation": {
+    "covid_antigen_test_name": "COVID-19 Rapid Antigen Test",
+    "covid_vaccination": "COVID-19 Vaccination"
+  },
+  "pharmacy_specific": {
+    "student_in_a_school": "Yes",
+    "school_name": "test school name",
+    "patients_occupation": "student",
+    "patients_name": "test name",
+    "patients_address": "test address",
+    "patients_phone": 1234567890
+  },
+  "dependent": {
+    "dependent_picker": "New person",
+    "dependent_first_name": "test_first",
+    "dependent_last_name": "test_last",
+    "dependent_dob_year": "2002",
+    "another_dependent_dob_year": "2001",
+    "dependent_dob_day": "10",
+    "dependent_address": "test address",
+    "dependent_dob_month": "March",
+    "dependent_city": "test address",
+    "dependent_zipcode": 98101,
+    "dependent_county": "test city",
+    "dependent_state": "AR",
+    "existing_dependent": "Test_first Test_last",
+    "dependent_type": "Existing"
+  },
+  "negative_test_data": {
+    "min_length_char": "a",
+    "min_length_no": "1",
+    "invalid_zip_code": "34567",
+    "incomplete_email": "testgmail.com",
+    "invalid_card_no": "1234567890123456",
+    "invalid_card_expiry": "12/12",
+    "invalid_address": "abc",
+    "test_dependent_dob_year": "2018",
+    "dependent_dob_day": "31",
+    "dependent_dob_month": "December",
+    "vaccine_dependent_dob_year": "2003",
+    "invalid_day": "32",
+    "invalid_year": "122"
+  },
+  "select_covid_vaccine_dose": {
+    "dose_1": {
+      "covid_vaccine_selection": "dose1"
+    },
+    "dose_2": {
+      "covid_vaccine_selection": "dose2"
+    }
+  },
+  "covid_vaccine": {
+    "select_covid_vaccine": "covid_vaccine",
+    "covid_vaccine_dose1": "dose1",
+    "covid_vaccine_dose2": "dose2",
+    "received_positive_covid_19": "Yes",
+    "received_vaccine_past_14_days": "No",
+    "received_covid19_vaccine": "No",
+    "received_monoclonal_antibodies": "No",
+    "bleeding_disorder": "No",
+    "had_a_seizure_disorder": "No",
+    "is_pregnant_or_breastfeeding": "No",
+    "has_severe_allergic_reaction": "Yes",
+    "reason_allergic_reaction_checkbox": "Receiving POLYSORBATE or products containing POLYSORBATE",
+    "anaphylactic_response": "test_allergy"
+  },
+  "covid_vaccine_dose2_que": {
+    "first_vaccine_dose": "Moderna",
+    "first_dose_date_month": "March",
+    "first_dose_date_day": 15,
+    "first_dose_date_year": 2021
+  },
+  "join_waitlist": {
+    "pharmacy_distance": "5 mi.",
+    "applicant_type_myself": "Myself",
+    "applicant_type_another": "Another person",
+    "firstname": "first",
+    "lastname": "last"
+  },
+  "vaccine_url":"https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect.html"
+}

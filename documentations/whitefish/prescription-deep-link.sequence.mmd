@@ -1,0 +1,32 @@
+sequenceDiagram
+  Actor User
+  User-)+MyRx UI: /prescrption/:prescriptionId
+  MyRx UI-)+MyRx API: /api/prescription/:prescriptionId
+  MyRx API-)+Platform: /prescription/:prescriptionId
+  Platform--)-MyRx API: IFhir
+  MyRx API--)-MyRx UI: IPrescriptionInfoResponse
+  MyRx UI-)+Content: /learn-mores/:ndc
+  Content--)-MyRx UI: IDrugInformationResponse
+  MyRx UI-)+MyRx API: /api/prescription/search-pharmacy?zipcode=:zip&sortby=:sortBy&identifier=:prescriptonId&distance=:distance
+  MyRx API-)+Platform: /prescription/:prescriptionId
+  Platform--)-MyRx API: IFhir
+  alt CASH users
+  MyRx API-)+Content: /coupons/:ndc?quantity=:quantity
+  Note right of Content: Only if user is Smart Price eligible
+  Content--)-MyRx API: ICoupon
+  MyRx API-)+Platform GEARS: /pharmacies/1.0/pharmacies/coordinates?latitude=:latitude&longitude=:longitude&radiusMiles=:distance
+  Platform GEARS--)-MyRx API: IPrescriptionPharmacy[]
+  MyRx API-)+Platform GEARS: /pharmacies/1.0/pharmacy?ncpdp=:ncpdp
+  Note right of Platform GEARS: Only for featured pharmacy NCPDP
+  Platform GEARS--)-MyRx API: IPrescriptionPharmacy
+  MyRx API-)+Content: /pricing-smart-prices/calculate/:ndc/NDC/
+  Content--)-MyRx API: ISmartPriceProviderPrice[]
+  else PBM users
+  MyRx API-)+Platform GEARS: /pharmacies/1.0/pharmacies/coordinates?latitude=:latitude&longitude=:longitude&radiusMiles=:distance
+  Platform GEARS--)-MyRx API: IPrescriptionPharmacy[]
+  MyRx API-)+Platform: /pharmacypricing/getbestpharmacydrugprices (POST IPatientPriceRequest)
+  Platform--)-MyRx API: IPharmacyPrice[]
+  end
+  MyRx API--)-MyRx UI: IPharmacyDrugPriceResponse
+  MyRx UI--)-User: (content)
+            

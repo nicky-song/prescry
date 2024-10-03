@@ -1,0 +1,13 @@
+sequenceDiagram
+    Participant Twilio
+    Actor User
+    Twilio -->User: Sends a prescription message to user
+    User->>Myrx UI: Navigates to myrx.io <br/> Received via text message 
+    Note over Myrx UI: Login with your PIN
+    Myrx UI-)+Myrx API:https://test.myrx.io/api/account/pin/verify
+    Myrx API-)Myrx UI:{"message":""pin verified successfully","status":"success"}
+     Note left of Myrx UI: calls API with claim alertID
+    Myrx UI-)Myrx API: https://test.myrx.io/api/pending-prescriptions/<claimAlertId>
+    Myrx API->>Myrx UI: IPendingMedicationResponseData
+   Note over Myrx UI: Claim Alert Screen
+    Myrx UI-->>User : Content

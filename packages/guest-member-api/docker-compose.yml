@@ -1,0 +1,34 @@
+#####################################################
+#### For local/dev use only
+#### see README-docker-local.md  for pre-requisites
+#####################################################
+
+version: '3'
+services:
+  booking:
+    env_file: ./env.booking-service.test.md
+    image: $BOOKING_SERVICE_IMAGE
+    ports:
+      - 8077:8077
+    networks:
+      local:
+        aliases:
+          - test-api.prescryptive.io
+
+  uxapi:
+    env_file: ./env.guest-member-api.test.md
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    ports:
+      - 4300:4300
+    depends_on:
+      - booking
+    volumes:
+      - '${pwd}.:/var/api'
+      - '/var/log/prescryptive-logs'
+    networks:
+      local:
+
+networks:
+  local:

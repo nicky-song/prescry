@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base",
+  "compilerOptions": {
+    "paths": {
+      "*": ["types/*"],
+      "node-webtokens/index.d.ts": ["types/node-webtokens.d.ts"]
+    },
+    "outDir": "./lib",
+    "baseUrl": "./",
+    "types": ["jest", "node", "dotenv"],
+    "skipDefaultLibCheck": false,
+    "skipLibCheck": true,
+    "sourceMap": false
+  },
+  "include": ["./src", "types/node-webtokens.d.ts"]
+}

@@ -1,0 +1,10 @@
+graph TD
+A([Array of IPharmacyDrugPrice Arrays]) --> |AKA| B(Array of 'Pharmacy Groups')
+B --> |For Each Pharmacy Group| C([IPharmacyDrugPrice Array])
+C --> |First Element x 0| D([IPharmacyDrugPrice])
+D --> |pharmacy| G[PrescriptionValueCard]
+D --> |price| G[PrescriptionValueCard]
+C --> |Second to Last Elements x 1 through N| CC{usegroup}
+CC --> |true| E[PharmacyGroup]
+E --> |For Each| F([IPharmacyDrugPrice])
+F --> |pharmacy| H[PharmacyInfoCard]

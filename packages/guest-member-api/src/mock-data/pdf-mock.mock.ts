@@ -1,0 +1,3 @@
+// Copyright 2021 Prescryptive Health, Inc.
+
+export const pdfMock = `+CmVuZG9iagoyMCAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvQ0lERm9udFR5cGUyCi9CYXNlRm9udCAvQlpaWlpaK09wZW5TYW5zLVJlZ3VsYXIKL0NJRFN5c3RlbUluZm8gPDwKL1JlZ2lzdHJ5IChBZG9i`;

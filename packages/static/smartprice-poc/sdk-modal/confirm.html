@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>(function(window,document){
+		var googleAnalyticsId = 'G-T02QK7E8NN';
+		googleAnalyticsId = googleAnalyticsId.indexOf('$') > -1 ? 'G-G9L03K4BEE' : googleAnalyticsId;
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		var scriptElement = document.createElement('script');
+		scriptElement.async=true;
+		scriptElement.src= "https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId;
+		firstScriptTag.parentNode.insertBefore(scriptElement,firstScriptTag);
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', googleAnalyticsId);
+		})(window,document);
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){
+		w[l]=w[l]||[];
+		w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});
+		var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+		j.async=true;
+		j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PNLH6H4');
+	</script>
+	<!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>Prescryptive - SmartPrice&trade; Program</title>
+  <meta name="description" content="Prescryptive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Prescryptive">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prescryptive.com/">
+  <meta property="og:image" content="image/png">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/scrollbar.css">
+
+  <meta name="theme-color" content="#6240A3">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNLH6H4"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<section role="main" class="container bg">		
+		<div class="content content-flex">
+				<div class="card white-bgcolor mar-top-24">
+					<h2 class="primary-color divider-gray">You are all set!</h2>
+					<p class="mar-bottom-32"> Thank you for joining MyRx.io and Prescryptive Health! Here is your membership information.</p>
+					
+					<div class="saving-card">
+						<div class="header">
+							<img width="147" alt="Prescryptive" src="../assets/brand-no-logo.svg">
+							<p><b>Smart</b>PRICE™ Savings Card</p>
+						</div>
+						<div class="content">
+							<div class="row">
+								<div class="data">
+									<p class="gray-color mar-bottom-0 mar-top-0">Member ID</p>
+									<h3 class="mar-top-4 mar-bottom-0 member"><b class="query-memberid"></b></h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="data">
+									<p class="gray-color mar-bottom-0 mar-top-0">GROUP</p>
+									<h3 class="mar-top-4 mar-bottom-0 query-rxgroup"></h3>
+								</div>
+								<div class="data">
+									<p class="gray-color mar-bottom-0 mar-top-0">BIN</p>
+									<h3 class="mar-top-4 mar-bottom-0 query-rxbin"></h3>
+								</div>
+								<div class="data">
+									<p class="gray-color mar-bottom-0 mar-top-0">PCN</p>
+									<h3 class="mar-top-4 mar-bottom-0 query-carrierpcn"></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="primary-color divider-gray">What’s next?</h2>
+					<ul class="items mar-top-24 mar-bottom-24">
+						<li class="content-flex row">
+							 <div class="image-mobile text-left mar-right-24">
+								 <img width="60" alt="Check your text message" src="../assets/message-icon.svg">
+							 </div>
+							 <div class="text">
+								 <p class="bold mar-top-0 block-text">Check your text message or email</p>
+								 <p>We've also sent your SmartPRICE membership info to these places for your records.</p>
+							 </div>
+						</li>
+					</ul>
+
+					<div class="note-help text-left">
+						<p>Questions? We are here to help <a href="mailto:myrx@prescryptive.com?subject=SmartPrice%20customer%20inquiry" class="link">myrx@prescryptive.com</a> | 
+						<span><a href="https://prescryptive.com/privacy-policy/" class="link" target="_blank">Privacy Policy</a></span></p>
+					</div>
+					
+					<div class="control mar-bottom-32 mar-top-24">
+						<button class="primary-button" onclick="return closeWindow();">CLOSE</button>
+					</div>
+				</div>
+		</div>
+
+	</section>
+	
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		var query = new URLSearchParams(window.location.search);
+		jQuery('.query-memberid').text(query.get('memberId'));
+		jQuery('.query-rxgroup').text(query.get('rxGroup'));
+		jQuery('.query-rxbin').text(query.get('rxBin'));
+		jQuery('.query-carrierpcn').text(query.get('carrierPCN'));
+
+		window.onload = function() {
+			const response = {smartPriceMemberId: query.get('memberId')}
+    	window.parent.postMessage({ message: "confirmation", value: response }, "*");
+		};
+
+		function closeWindow() {
+			window.parent.postMessage({ message: "closeModal"}, "*");
+		}
+		
+	</script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

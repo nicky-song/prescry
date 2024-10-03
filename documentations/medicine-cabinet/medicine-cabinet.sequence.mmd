@@ -1,0 +1,16 @@
+sequenceDiagram
+  Actor User
+  alt From Home screen feed
+  User-)+MyRx UI: "Medicine Cabinet" (press)
+  MyRx UI-)+MyRx API: /api/prescription/get-cabinet?page=1
+  else From Medicine Cabinet screen
+  User-)+MyRx UI: "Show more" (press)
+  MyRx UI-)+MyRx API: /api/prescription/get-cabinet?page=:page
+  end
+  loop Logged in member patient ids
+  MyRx API-)+GEARS: /whitefish/1.0/patient/:clientPatientId/prescriptions?sourceSystem=MyRx
+  GEARS--)-MyRx API: IFhir
+  end
+  MyRx API--)-MyRx UI: IMedicineCabinetResponse
+  MyRx UI--)-User: (content)
+            

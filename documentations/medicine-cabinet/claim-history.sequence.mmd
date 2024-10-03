@@ -1,0 +1,20 @@
+sequenceDiagram
+  Actor User
+  User-)+MyRx UI: "Claim history" (press)
+  MyRx UI-)+MyRx UI: "Claim history screen" (load)
+  MyRx UI-)+MyRx API: /api/claims
+  MyRx API-)+GEARS: /claim-history/claims/:rxSubGroup/:memberId
+  GEARS--)-MyRx API: IClaimsResponse
+  rect rgb(244,244,244)
+  note right of MyRx API: Get Claims PDF static content
+  MyRx API-)+Redis: key: "MyRx:claim-history-pdf:...", keyType: "content" (Get)
+  Redis--)-MyRx API: IClaimHistoryPdfContent
+  opt Content not in Redis
+  MyRx API-)+Strapi: /ui-content?ExperienceKey=MyRx&GroupKey.GroupKey_in=claim-history-pdf&...
+  Strapi--)-MyRx API: IClaimHistoryPdfContent
+  MyRx API-)+Redis: key: "MyRx:claim-history-pdf:...", keyType: "content" (Add)
+  end
+  end
+  MyRx API--)-MyRx UI: IClaimHistory
+  MyRx UI--)-User: (content)
+            

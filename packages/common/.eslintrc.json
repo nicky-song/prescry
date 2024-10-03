@@ -1,0 +1,13 @@
+{
+  "ignorePatterns": [
+    "node_modules",
+    "types",
+    "lib",
+    "babel.config.js",
+    "src/typings",
+    "storybook-static"
+  ],
+  "rules": {
+    "filename-rules/match": "warn"
+  }
+}

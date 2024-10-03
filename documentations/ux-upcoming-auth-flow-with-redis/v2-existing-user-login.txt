@@ -1,0 +1,70 @@
+title Existing User Login Flow with new device ( no session )
+
+actor Client
+
+activate UI
+Client->UI:prescription link
+UI -> API Server: Login Request
+
+activate API Server
+API Server -> Middleware : Request user verification
+activate Middleware
+Middleware ->Middleware : Validate User
+
+Middleware --> Middleware : Verify failed One time password attempts .
+
+Middleware --> API Server : if session_status == blocked 
+
+API Server --> UI : Response : HTTP 429 ( Too many requests )
+
+Middleware --> Redis : Create new Session \n and expire old sesssion.
+
+note right of Redis :{"session_id2": {"cookie": {"originalMaxAge": 360000,\n "expires": "2019-09-19T09:57:47.326Z"}, "views": 0,"key": "identifier1"}}
+
+Middleware --> Redis : update user object with new sessionId .
+
+note right of Redis :{"identifier1": {... "currentSessionId": "session_id2", isDeviceVerified : false}}
+
+Middleware ->API Server : (sessionId)
+
+deactivate Middleware
+
+API Server -> UI :  Login Response (sessionId)
+deactivate API Server
+
+Client->UI:Verification Code
+
+activate API Server
+UI -> API Server:  Verify Code Request \n with sessionId
+
+activate Middleware
+API Server -> Middleware : Request phone number verification
+
+Middleware -> Middleware : verify session status and code
+
+alt code verification success
+
+Middleware --> Redis: update user object
+
+note right of Redis :{"identifier1": {... isDeviceVerified : true}}
+
+else invalid code & verifyCodeAttempts <= 3
+
+Middleware --> Redis: increment verifyCodeAttempts counter
+
+note right of Redis: {"session_id": {..."verifyCodeAttempts" 1}}
+
+else invalid code & verifyCodeAttempts > 3
+
+Middleware --> Redis: update session to block user 
+
+note right of Redis: {"session_id": {"cookie": {"originalMaxAge": 600000,},\n "verifyCodeAttempts" 4,"status": "blocked"}}
+
+end
+
+Middleware ->API Server : (sessionId)
+
+deactivate Middleware
+
+API Server -> UI :  Verify Code Response (sessionId)
+deactivate API Server

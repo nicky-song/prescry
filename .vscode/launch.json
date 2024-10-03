@@ -1,0 +1,86 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "serve: api-guest-member",
+      "cwd": "${workspaceFolder}/packages/guest-member-api",
+      "outFiles": ["${workspaceFolder}/packages/guest-member-api/lib/**/*.js"],
+      "program": "${workspaceFolder}/packages/guest-member-api/build/index.js",
+      "envFile": "${workspaceFolder}/packages/guest-member-api/.env",
+      "protocol": "inspector",
+      "runtimeArgs": ["--preserve-symlinks", "--preserve-symlinks-main"],
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest-FILE: common",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${fileBasename}", "--config", "./jest.config.js", "--watch"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "cwd": "${workspaceFolder}/packages/common",
+      "windows": {
+        "program": "${workspaceFolder}/packages/guest-member-api/node_modules/jest/bin/jest"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest-FILE: myrx",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "${fileBasename}",
+        "--config",
+        "./jest.config.ts",
+        "--watch"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "cwd": "${workspaceFolder}/packages/myrx",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest-FILE: api",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${fileBasename}", "--config", "./jest.config.js"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "cwd": "${workspaceFolder}/packages/guest-member-api",
+      "windows": {
+        "program": "${workspaceFolder}/packages/guest-member-api/node_modules/jest/bin/jest"
+      }
+    },
+    {
+      "name": "Local Process with Kubernetes (Preview)",
+      "type": "dev-spaces-connect-configuration",
+      "request": "launch"
+    },
+    {
+      "name": "Debug API",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn debug:api",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug API - ts-node",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn serve:debug",
+      "cwd": "${workspaceFolder}/packages/guest-member-api"
+    }
+  ]
+}

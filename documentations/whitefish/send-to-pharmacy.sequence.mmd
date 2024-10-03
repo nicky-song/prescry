@@ -1,0 +1,26 @@
+sequenceDiagram
+  Actor User
+  User-)+MyRx UI: "Send to pharmacy" (click)
+  MyRx UI-)+MyRx API: /prescription/send-prescription (POST: ncpdp, prescriptionId)
+  MyRx API-)+Platform: /prescription/:prescriptionId
+  Platform--)-MyRx API: IGetPrescriptionHelperResponse
+  MyRx API-)+Platform: /pharmacies/1.0/pharmacy?ncpdp=:ncpdp
+  Platform--)-MyRx API: IPrescriptionPharmacy
+  MyRx API-)+Platform: /prescription/:prescriptionId/pharmacy (PATCH: IFhir)
+  Platform--)-MyRx API: ISendPrescriptionHelperResponse
+  alt isSmartPriceEligible
+  MyRx API-)+Content: /coupons/:ndc?quantity=:quantity
+  Content--)-MyRx API: ICouponResponse
+  MyRx API-)+Content: /pricing-smart-prices/calculate/:ndc/NDC/
+  Content--)-MyRx API: ISmartPriceLookupResponse
+  else
+  MyRx API-)+Platform: /pharmacypricing/getbestpharmacydrugprices (POST: IPatientPriceRequest)
+  Platform--)-MyRx API: IPharmacyPriceResponse
+  end
+  MyRx API-)Service Bus: Publish IPrescriptionPriceEvent
+  alt coupon and phoneNumber
+  MyRx API-)Twilio: Text message
+  end
+  MyRx API--)-MyRx UI: (response)
+  MyRx UI--)-User: (content)
+            

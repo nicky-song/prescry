@@ -1,0 +1,27 @@
+FROM mhart/alpine-node:slim-14
+
+#####################################################
+#### see README-docker-local.md  for pre-requisites
+#####################################################
+
+# add yarn
+RUN apk add --update nodejs nodejs-npm yarn
+
+# create folder for api files
+RUN mkdir -p /var/api
+WORKDIR /var/api
+
+# copy the build files (futuru)
+COPY build build
+
+# expose port
+EXPOSE 4300
+CMD ["yarn", "serve:watch"]
+
+
+# ARG NPM_TOKEN
+# RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+# RUN npm install
+# RUN node -v
+# RUN apk add --update nodejs nodejs-npm yarn
+# RUN npx vsts-npm-auth --config .npmrc

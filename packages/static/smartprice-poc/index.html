@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>(function(window,document){
+		var googleAnalyticsId = 'G-T02QK7E8NN';
+		googleAnalyticsId = googleAnalyticsId.indexOf('$') > -1 ? 'G-G9L03K4BEE' : googleAnalyticsId;
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		var scriptElement = document.createElement('script');
+		scriptElement.async=true;
+		scriptElement.src= "https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId;
+		firstScriptTag.parentNode.insertBefore(scriptElement,firstScriptTag);
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', googleAnalyticsId);
+		})(window,document);
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){
+		w[l]=w[l]||[];
+		w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});
+		var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+		j.async=true;
+		j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PNLH6H4');
+	</script>
+	<!-- End Google Tag Manager -->
+	<meta name="facebook-domain-verification" content="p7neuicazdu8mwryxod92sokwq843j" />
+  <meta charset="utf-8">
+  <title>Prescryptive - SmartPrice&trade; Program</title>
+  <meta name="description" content="Prescryptive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Prescryptive">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prescryptive.com/">
+  <meta property="og:image" content="image/png">
+
+ <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/jbox@1.2.0/dist/jBox.all.min.css">	
+
+  <meta name="theme-color" content="#6240A3">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNLH6H4"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<section role="main" class="container bg">
+		<div class="content content-flex">
+			<div class="column hero-bg">
+				<div class="info">
+					<div class="site-header clearfix" role="banner">
+						<div class="site-logo">
+							<a href="/"><img width="240" src="assets/brand.svg"></a>
+						</div>
+					</div>
+					<h1 class="white-color">Save big with a <b>Smart</b>PRICE™ savings card.</h1>
+					<p class="steps-header">Save money on prescriptions. Here's how it works:</p>					
+					<ul class="white-color">
+						<li><div class="step">1</div><p><b>Create your free account</b>. <span>It takes just a few steps!</span></p></li>
+						<li><div class="step">2</div><p><b>Start using your card now</b>. See <a class="referralPharmacy link-light" href="javascript:void(0)" onclick="return showPharmaciesModal()">participating pharmacies</a>.</p></li>
+						<li><div class="step">3</div><p><b>Save up to 80% on prescription drugs</b>. 
+					</ul>
+
+					<div class="divider"></div>
+					<p class="white-color">Have a question? See this <a href="https://enroll.myrx.io/faq" class="link-light">FAQ</a> to learn more about <b>Smart</b>PRICE and how it works.</p>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="card white-bgcolor">
+					<form id="myform" onsubmit="return startRegistration(this)">
+						<h2 class="primary-color">Create a <b>Smart</b>PRICE™ savings card</h2>
+						<p>Upon creating your account, Prescryptive will provide to you, at no cost, a digital prescription savings card that you can use at participating pharmacies.</p>
+					
+						<p class="bold important">Complete all the fields below</p>
+						<div class="field-body">
+							<div class="field field-half">
+								<label class="label">First name</label>
+								<div class="control">
+									<input id="firstName" class="input" type="text" placeholder="Your first name" required value="">
+								</div>
+							</div>
+							<div class="field field-half">
+								<label class="label">Last name</label>
+								<div class="control">
+									<input id="lastName" class="input" type="text" placeholder="Your last name" required value="">
+								</div>
+							</div>
+						</div>
+						<div class="field-body">
+							<div class="field field-half">
+								<label class="label">Email address</label>
+								<div class="control">
+									<input id="email" class="input" type="email" placeholder="your@email.com" required value="">
+								</div>
+							</div>
+							<div class="field field-half">
+								<label class="label">Mobile phone</label>
+								<div class="control">
+									<input id="phone" class="input" type="tel" placeholder="555-555-5555" maxlength="12" required value="">
+									<div class="tooltip" tabindex="0">Why do you need my phone number?
+										<span class="tooltiptext">We will send you a text message to 
+											verify your identity and the digital 
+											discount card information.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field-body dob-container">
+							<div class="field field-half">
+								<label class="label">Date of birth</label>
+								<div class="control">
+									<input id="dateOfBirth" class="input" type="date" max="2999-12-31" placeholder="MM / DD / YYYY" required value="">
+								</div>
+							</div>
+						</div>
+
+						<div style="height: 12px;"></div>
+
+						<div class="field-body">
+							<label class="checkbox">
+								<input id="terms" type="checkbox" required>
+								<div class="label-content">
+									<div class="text text-margin-right" style="margin-top: 3px;">
+										I have read and agree to the Prescryptive
+										<a href="https://prescryptive.com/terms-of-use" class="link">Terms & Conditions</a>
+									</div>
+								</div>
+							</label>
+						</div>
+
+						<div class="control mar-bottom-32 mar-top-24">
+							<button type="submit" form="myform" id="verify-phone-button" class="primary-button">CREATE ACCOUNT
+						</div>
+
+						<div>
+							<p class="foot-note">
+								Please note: A few medications have age and benefit restrictions, you must be under 65 and not be a part of any government funded healthcare program to be eligible.
+							</p>
+						</div>
+
+						<div class="note-help">
+							<p>Questions? We are here to help <a href="mailto:myrx@prescryptive.com?subject=SmartPrice%20customer%20inquiry" class="link">myrx@prescryptive.com</a> | 
+							<span><a href="https://prescryptive.com/privacy-policy/" class="link">Privacy Policy</a></span></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="savingsModal" class="modal hidden">
+		<div class="overlay">
+				<div class="header">
+					<h1></h1>
+					<h2></h2>
+				</div>
+				<div class="content">
+					<div class="mobile-table">
+						<div class="product">
+							<div class="name">
+									<p>BASAGLAR KwikPen</p>
+									<p>for 1 Box, 5 x 3mL pens each</p>
+							</div>
+							<div class="row">
+								<div><b>Smart</b>PRICE™</div>
+								<div>Competitor price</div>
+							</div>
+							<div class="row">
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="name">
+									<p>Humalog</p>
+									<p>for 1 Vial, 10mL each</p>
+							</div>
+							<div class="row">
+								<div><b>Smart</b>PRICE™</div>
+								<div>Competitor price</div>
+							</div>
+							<div class="row">
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="name">
+									<p>Trulicity</p>
+									<p>for 1 Box, 4 x 0.5mL pens each</p>
+							</div>
+							<div class="row">
+								<div><b>Smart</b>PRICE™</div>
+								<div>Competitor price</div>
+							</div>
+							<div class="row">
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<table>
+						<tr>
+							<th>Drug name</th>
+							<th><b>Smart</b>PRICE™</th>
+							<th>Competitor price</th>
+						</tr>
+						<tr class="table-product">
+							<td>
+								<div>
+									<p>BASAGLAR KwikPen</p>
+									<p>for 1 Box, 5 x 3mL pens each</p>
+								</div>
+							</td>
+							<td></td>
+							<td></td>
+						  </tr>
+						<tr class="table-product">
+							<td>
+							<div>
+								<p>Humalog</p>
+								<p>for 1 Vial, 10mL each</p>
+							</div>
+						  </td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="table-product">
+							<td>
+							<div>
+								<p>Trulicity</p>
+								<p>for 1 Box, 4 x 0.5mL pens each</p>
+							</div>
+						  </td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<p>To see a full list of Prescryptive <b>Smart</b>PRICE medications, <a href="https://enroll.myrx.io/faq" class="link">Read our FAQ</a></p>
+				</div>
+				<div class="callout">
+					<p>It’s easy!</p>
+					<p>Sign up today</p>
+				</div>
+				<div class="footer">
+					<img width="240" src="assets/brand.svg">
+				</div>
+
+			</div>
+			<button class="close-button" onclick="return closeSavingPricingModal()">
+				<img width="24" src="assets/close.svg">
+			</button>
+	</section>
+
+	<section id="pharmaciesModal" class="modal hidden">
+		<div class="overlay">
+				<div class="header">
+					<h1>Start saving today!</h1>
+					<h2>Use your <b>Smart</b>PRICE savings card at participating pharmacies</h2>
+				</div>
+				<div class="content">
+					<a href="https://www.gogomeds.com/GoGoClient/#/smart-price">GoGoMeds</a>
+				</div>
+				<div class="footer">
+					<img width="240" src="assets/brand.svg">
+				</div>
+			</div>
+			<button class="close-button" onclick="return closePharmaciesModal()">
+				<img width="24" src="assets/close.svg">
+			</button>
+	</section>
+	<div class="hidden hidden-divs">
+		<div class="verify-code-div">
+			<div class="control text-center">
+				<div style="margin:auto;padding-bottom:10px">
+					<input form="myform" class="verify-code-input input text-center" type="tel" placeholder="######" style="width:200px;font-size:18pt" maxlength="6" onkeypress="return onEnterVerifyRegistrationCode(event)"/>
+				</div>
+				<button onclick="return verifyRegistrationCode()" id="verify-code-button" class="primary-button">VERIFY</button>
+			</div>
+		</div>
+	</div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/jbox@1.2.0/dist/jBox.all.min.js"></script>
+	<script src="./js/create-account.js" async="true"></script>
+	<script src="./js/modals.js" async="true"></script>
+
+  <script>
+	  var datefield = document.createElement("input")
+
+		datefield.setAttribute("type", "date")
+		
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		    document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+		    document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"><\/script>\n') 
+		}
+		if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+		    $(document).ready(function() {
+		        $('#date').datepicker();
+		    }); 
+		}
+		$(document).keypress(
+			function(event){
+				if (event.which == '13') {
+					event.preventDefault();
+				}
+			}
+		);
+		</script>
+</body>
+
+</html>

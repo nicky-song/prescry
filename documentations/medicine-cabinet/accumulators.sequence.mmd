@@ -1,0 +1,12 @@
+sequenceDiagram
+  Actor User
+  User-)+MyRx UI: "Plan deductibles" (press)
+  MyRx UI-)+MyRx UI: "Deductibles screen" (load)
+  MyRx UI-)+MyRx API: /api/claims/accumulators
+  MyRx API-)+GEARS: /accumulator/api/accumulator/:rxSubGroup/member/:memberId/summary
+  GEARS--)-MyRx API: IAccumulatorsResponse
+  MyRx API-)+Strapi: /group-plans?GroupPlanCode=:rxSubGroup
+  Strapi--)-MyRx API: IGetCmsPlanContentResponse
+  MyRx API--)-MyRx UI: IAccumulators
+  MyRx UI--)-User: (content)
+            

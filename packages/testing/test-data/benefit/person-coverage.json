@@ -1,0 +1,24 @@
+{
+  "effectiveDate": "20220101",
+  "familyId": "",
+  "rxGroup": "1002G52",
+  "rxGroupType": "SIE",
+  "rxSubGroup": "CON03",
+  "uniqueId": "",
+  "personCode": "01",
+  "carrierPCN": "PH",
+  "rxBIN": "610749",
+  "coverageType": "Family",
+  "terminationDate": "20231231",
+  "changeDate": {
+    "$date": 1639693006978
+  },
+  "changeFile": "SomeFile.txt",
+  "activePlan": true,
+  "updatedAt": {
+    "$date": 1639693557766
+  },
+  "createdAt": {
+    "$date": 1639693015866
+  }
+}

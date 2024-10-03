@@ -1,0 +1,112 @@
+// Copyright 2018 Prescryptive Health, Inc.
+
+import { sortAndFilterContactsBasedOnMinimumAge } from './sort.helper';
+import { IMemberContactInfo } from '../models/member-info/member-contact-info';
+
+describe('sortAndFilterContactsBasedOnMinimumAge', () => {
+  it('should sort people according to first name, filtering by minimum age', () => {
+    const age = 3;
+    const personList = [
+      {
+        email: '',
+        firstName: 'TEST',
+        identifier: '6000b2fa965fa7b37c00a7b3',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: 'TEST',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '03',
+        primaryMemberRxId: 'CA7F7K03',
+        age: 4,
+      } as IMemberContactInfo,
+      {
+        email: '',
+        firstName: 'ADULT',
+        identifier: '60013af2965fa7b37c00a7b4',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: '>18',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '05',
+        primaryMemberRxId: 'CA7F7K05',
+        age: 20,
+      } as IMemberContactInfo,
+      {
+        email: '',
+        firstName: 'ADULT1',
+        identifier: '60130fb83068eb8cecfb055d',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: '>13<18',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '03',
+        primaryMemberRxId: 'CA7F7K03',
+        age: 13,
+      } as IMemberContactInfo,
+      {
+        email: '',
+        firstName: 'CHILD',
+        identifier: '60131183057357ba4a28b4dd',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: '>3',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '03',
+        primaryMemberRxId: 'CA7F7K03',
+        age: 2,
+      } as IMemberContactInfo,
+    ];
+    expect(sortAndFilterContactsBasedOnMinimumAge(personList, age)).toEqual([
+      {
+        email: '',
+        firstName: 'ADULT',
+        identifier: '60013af2965fa7b37c00a7b4',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: '>18',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '05',
+        primaryMemberRxId: 'CA7F7K05',
+        age: 20,
+      } as IMemberContactInfo,
+      {
+        email: '',
+        firstName: 'ADULT1',
+        identifier: '60130fb83068eb8cecfb055d',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: '>13<18',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '03',
+        primaryMemberRxId: 'CA7F7K03',
+        age: 13,
+      } as IMemberContactInfo,
+      {
+        email: '',
+        firstName: 'TEST',
+        identifier: '6000b2fa965fa7b37c00a7b3',
+        isLimited: false,
+        isPhoneNumberVerified: false,
+        isPrimary: false,
+        lastName: 'TEST',
+        phoneNumber: '',
+        primaryMemberFamilyId: 'CA7F7K',
+        primaryMemberPersonCode: '03',
+        primaryMemberRxId: 'CA7F7K03',
+        age: 4,
+      } as IMemberContactInfo,
+    ]);
+  });
+});

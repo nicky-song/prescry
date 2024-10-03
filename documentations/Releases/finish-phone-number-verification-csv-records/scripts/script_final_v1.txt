@@ -1,0 +1,85 @@
+use RxAssistant_dev
+
+var allPrimaryMemberRxIds = ''
+var allPrimaryMemberRxIdsCount = 0
+var noPhoneNumberPrimaryMemberRxIds = ''
+var noPhoneNumberPrimaryMemberRxIdsCount = 0
+var withPhoneNumberPrimaryMemberRxIds = ''
+var withPhoneNumberPrimaryMemberRxIdsCount = 0
+db.getCollection("Person").find(
+{
+    $or : [
+        {
+            $and : [
+                {
+                    "events.updateAction" : "FinishPhoneNumberVerification"
+                },
+                {
+                    "events.eventBy" : ""
+                },
+                {
+                    "isTestMembership" : false
+                }
+            ]
+        },
+        {
+            $and : [
+                {
+                    "events.person.dateOfBirth" : {
+                        $type : 9
+                    }
+                },
+                {
+                    "isTestMembership" : false
+                }
+            ]
+        }
+    ]
+}
+).forEach(function(doc) {
+    print('Processing primaryMemberRxId: ' + doc.primaryMemberRxId)
+    allPrimaryMemberRxIds = allPrimaryMemberRxIds.concat("'"+doc.primaryMemberRxId+"',")
+    allPrimaryMemberRxIdsCount++
+    if(doc.phoneNumber)
+    {
+        withPhoneNumberPrimaryMemberRxIds = withPhoneNumberPrimaryMemberRxIds.concat("'"+doc.primaryMemberRxId+"',")
+        withPhoneNumberPrimaryMemberRxIdsCount++
+    }
+    else
+    {
+        noPhoneNumberPrimaryMemberRxIds = noPhoneNumberPrimaryMemberRxIds.concat("'"+doc.primaryMemberRxId+"',")
+        noPhoneNumberPrimaryMemberRxIdsCount++
+    }
+    
+    doc.events.forEach(function(event) {
+        var dateOfBirth = event.person.dateOfBirth
+        var dateOfBirthString = ''
+        if (!(typeof dateOfBirth === 'string' || dateOfBirth instanceof String))
+        {
+            dateOfBirthString = dateOfBirth.getUTCFullYear() + '-' + (dateOfBirth.getUTCMonth() + 1).toString().padStart(2, '0') + '-' + dateOfBirth.getUTCDate().toString().padStart(2, '0')
+        }
+        else
+        {
+            dateOfBirthString = event.person.dateOfBirth
+        }
+        print ('dateOfBirthString: ' + dateOfBirthString)
+        event.person.dateOfBirth = dateOfBirthString
+    });
+
+/* Uncomment this part of the code if you'd actually like to do the update
+    db.Person.updateOne({
+        identifier: doc.identifier
+    }, {
+        $set: {
+            events : doc.events
+        }
+    })
+*/      
+});
+
+print("Filter to use Database Benefit/Collection PersonCoverage (all): " + "{ 'uniqueId': { $in: [" + allPrimaryMemberRxIds.slice(0,-1) + "] }, terminationDate: '' }")
+print("allPrimaryMemberRxIdsCount: " + allPrimaryMemberRxIdsCount)
+print("Filter to use Database Benefit/Collection PersonCoverage (no phone number): " + "{ 'uniqueId': { $in: [" + noPhoneNumberPrimaryMemberRxIds.slice(0,-1) + "] }, terminationDate: ''}")
+print("noPhoneNumberPrimaryMemberRxIdsCount : " + noPhoneNumberPrimaryMemberRxIdsCount )
+print("Filter to use Database Benefit/Collection PersonCoverage (with phone number): " + "{ 'uniqueId': { $in: [" + withPhoneNumberPrimaryMemberRxIds.slice(0,-1) + "] }, terminationDate: ''}")
+print("withPhoneNumberPrimaryMemberRxIdsCount: " + withPhoneNumberPrimaryMemberRxIdsCount)

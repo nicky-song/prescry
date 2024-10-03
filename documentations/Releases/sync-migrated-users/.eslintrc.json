@@ -1,0 +1,61 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "header",
+    "filename-rules"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended",
+    "./eslint-filename"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "types"
+  ],
+  "rules": {
+    "eqeqeq": "error",
+    "header/header": [
+      "error",
+      "line",
+      [{"pattern":"Copyright \\d{4} Prescryptive Health, Inc."}],
+      2
+    ],
+    "no-console": "error",
+    "no-useless-escape": "warn",
+    "object-shorthand": ["error", "always"], 
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.*", "*.stories.tsx"],
+      "rules": {
+        "no-console": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-non-null-assertion": "off"
+      }
+    },
+    {
+      "files": ["*.stories.tsx"],
+      "rules": {
+        "storybook/csf-component": "error",
+        "storybook/hierarchy-separator": "error",
+        "storybook/prefer-pascal-case": "error"
+      }
+    }
+  ]
+}

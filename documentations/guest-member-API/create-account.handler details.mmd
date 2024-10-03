@@ -1,0 +1,17 @@
+graph TD
+    A[Read request body for user details] --> B{prescription Id?}
+    B -->|Yes| C[verify user details with prescription]
+    B -->|No| D[ Search account by phone number]
+    C -->| Match | E[get phone number, FN, LN,Address from prescription]
+    C -->|Not Match| F[throw prescription doesnt match error]
+    E -->|pass phone number from prescription|D
+    D -->F{ Account/Account_DOB exists?}
+    F -->| No | G[validate user age]
+    F -->|Yes | H[generate DeviceToken]
+    G -->I{user age < age Limit}
+    I -->|Yes| J[Log into App insights and throw AGE_NOT_MET error]
+    H --> K[generate T&C acceptance body]
+    K --> L[Get CASH Person record for associated phone number if exists]
+    L --> M{Account/Account_DOB exists}
+    M --> |Yes| N[Go to  buildExistingAccountReponse]
+    M --> |No| O[Go to buildNewAccountReponse]

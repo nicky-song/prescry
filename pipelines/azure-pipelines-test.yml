@@ -1,0 +1,129 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
+  paths:
+    exclude:
+      - pipelines
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  azureContainerRegistry: prescryptivecontainerregistry.azurecr.io
+  azureSubscriptionEndpoint: rg-service-connection-rg-registry-prescryptivehealth-centralus-prod
+
+  BASE: prescryptive-ux-experiences/
+  BUILDID: $(Build.BuildNumber)
+  MAJOR_VERSION: 1
+  REGISTRY: $(azureContainerRegistry)/
+  TAG: $(MAJOR_VERSION).$(BUILDID)
+  USERNAME: ci
+
+  Root.path: $(System.DefaultWorkingDirectory)
+  Api.image: guest-member-api:$(TAG)
+  Api.path: $(Root.path)/packages/guest-member-api
+  Api.container: api-container-$(BUILDID)
+
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/yarn
+
+stages:
+  - stage: setup
+    displayName: Install Dependencies
+    jobs:
+      - job: setup 
+        displayName: Setup and Cache Dependencies
+        steps:
+
+          - task: NodeTool@0
+            inputs:
+              versionSpec: 16.13.2
+
+          - task: npmAuthenticate@0
+            inputs:
+              workingFile: .npmrc
+            condition: succeeded()
+
+          - task: YarnInstaller@3
+            inputs:
+              versionSpec: '1.x'
+            continueOnError: false
+
+          - task: Cache@2
+            inputs:
+              key: '"yarn" | "$(Agent.OS)" | **/yarn.lock'
+              path: $(YARN_CACHE_FOLDER)
+              cacheHitVar: CACHE_RESTORED
+            displayName: Cache dependencies
+            condition: succeeded()
+  - stage: testPackages
+    dependsOn: setup
+    displayName: Run Tests
+    jobs:
+      - job: test
+        strategy: 
+          matrix: 
+            api:
+              command: api
+              srcDirectory: guest-member-api
+              options: --testPathIgnorePatterns "/node_modules/" "/lib/" "/src/controllers/"
+            api-controllers:
+              command: api-controllers
+              srcDirectory: guest-member-api
+              options: --testPathPattern "/src/controllers/" --testPathIgnorePatterns "/node_modules/" "/lib/" "/src/controllers/.*/handlers/"
+            api-controller-handlers:
+              command: api-controller-handlers
+              srcDirectory: guest-member-api
+              options: --testPathPattern "/src/controllers/.*/handlers/"
+            common:
+              command: common
+              srcDirectory: common
+              options: --testPathIgnorePatterns "\\.snap$" "/node_modules/" "/lib/" "/.jest/" "/src/experiences/"
+            common-experiences:
+              command: common-experiences
+              srcDirectory: common
+              options: --testPathPattern "/src/experiences/" --testPathIgnorePatterns "\\.snap$" "/node_modules/" "/lib/" "/.jest/"
+            web:
+              command: web
+              srcDirectory: myrx
+              options: ""
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: 16.13.2
+              
+          - task: npmAuthenticate@0
+            inputs:
+              workingFile: .npmrc
+            condition: succeeded()
+
+          - script: |
+              yarn setup:options
+            displayName: Load dependencies from cache
+            workingDirectory: .
+            condition: and(succeeded(), ne(variables.CACHE_RESTORED, 'true'))
+            continueOnError: false
+
+          - script: |
+              yarn test:ci $(options)
+            displayName: test - $(command)
+            workingDirectory: ./packages/$(srcDirectory)
+            condition: succeeded()
+            continueOnError: false
+          - task: PublishTestResults@2
+            displayName: Publish $(command)
+            inputs:
+              failTaskOnFailedTests: true
+              testResultsFiles: '**/*.trx'
+              testRunner: VSTest
+              mergeTestResults: true
+            condition: succeeded()
+            continueOnError: false
+            

@@ -1,0 +1,17 @@
+{
+  "name": "finish-phone-number-verification-csv-records",
+  "version": "1.0.0",
+  "description": "To read csv file and remove duplicates rows  and publish message to service bus",
+  "main": "Y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "prescryptive",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.0",
+    "csv-parse": "^5.0.4",
+    "node-csv": "^0.1.2"
+  }
+}

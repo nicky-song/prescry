@@ -1,0 +1,4869 @@
+[
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulator-progress-bar",
+    "fieldKey": "info-button-label",
+    "type": "Text",
+    "language": "English",
+    "text": "More about {term}",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulator-progress-bar",
+    "fieldKey": "max-progress-label",
+    "type": "Text",
+    "language": "English",
+    "text": "To go",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulator-progress-bar",
+    "fieldKey": "min-progress-label",
+    "type": "Text",
+    "language": "English",
+    "text": "Spent",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulator-progress-bar",
+    "fieldKey": "max-value-label",
+    "type": "Text",
+    "language": "English",
+    "text": "/year",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulators-card",
+    "fieldKey": "deductible",
+    "type": "Text",
+    "language": "English",
+    "text": "Deductible",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulators-card",
+    "fieldKey": "family",
+    "type": "Text",
+    "language": "English",
+    "text": "Family",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulators-card",
+    "fieldKey": "individual",
+    "type": "Text",
+    "language": "English",
+    "text": "Individual",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "accumulators-card",
+    "fieldKey": "max-out-of-pocket",
+    "type": "Text",
+    "language": "English",
+    "text": "Max. Out of Pocket",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "alternative-savings-card",
+    "fieldKey": "message",
+    "type": "Text",
+    "language": "English",
+    "text": "Save {savingsAmount} with alternatives",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-card",
+    "fieldKey": "deductible-applied",
+    "type": "Text",
+    "language": "English",
+    "text": "Amount applied to deductible",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-card",
+    "fieldKey": "order-number",
+    "type": "Text",
+    "language": "English",
+    "text": "Order number",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-card",
+    "fieldKey": "pharmacy",
+    "type": "Text",
+    "language": "English",
+    "text": "Pharmacy",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "fieldKey": "title",
+    "type": "Text",
+    "language": "English",
+    "text": "Claim history",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "fieldKey": "empty-claims-heading",
+    "type": "Text",
+    "language": "English",
+    "text": "You have no claims",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "fieldKey": "empty-claims-text",
+    "type": "Text",
+    "language": "English",
+    "text": "The next time you purchase a medication through your insurance, the claim will appear here.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "fieldKey": "empty-claims-with-prescription-text",
+    "type": "Text",
+    "language": "English",
+    "text": "You have a new prescription in your Medicine Cabinet, once you shop your medication through your insurance, you will see the claim here.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "fieldKey": "download-button-label",
+    "type": "Text",
+    "language": "English",
+    "text": "Download",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "drug-details-text",
+    "fieldKey": "as-of",
+    "type": "Text",
+    "language": "English",
+    "text": "as of {date}",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "drug-details-text",
+    "fieldKey": "day-single",
+    "type": "Text",
+    "language": "English",
+    "text": "day",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "drug-details-text",
+    "fieldKey": "day-plural",
+    "type": "Text",
+    "language": "English",
+    "text": "days",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "drug-details-text",
+    "fieldKey": "refill-single",
+    "type": "Text",
+    "language": "English",
+    "text": "refill",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "drug-details-text",
+    "fieldKey": "refill-plural",
+    "type": "Text",
+    "language": "English",
+    "text": "refills",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "A pharmacy on your phone",
+    "fieldKey": "unauth-home-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Take control",
+    "fieldKey": "unauth-home-search-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Save up to 80% on prescriptions, book clinical services, and do more for your health.",
+    "fieldKey": "unauth-home-search-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Find a medication",
+    "fieldKey": "unauth-home-search-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Looking for your prescription benefits?",
+    "fieldKey": "pbm-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Do you have benefits through your employer that include Prescryptive\u2122 and MyRx.io? Let\u2019s get you connected!",
+    "fieldKey": "pbm-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Get started",
+    "fieldKey": "pbm-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Healthcare technology that empowers",
+    "fieldKey": "unauth-home-uvp-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Powered by Prescryptive Health, MyRx.io helps you control your prescription and pharmacy experience.",
+    "fieldKey": "unauth-home-uvp-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Own your prescriptions",
+    "fieldKey": "unauth-home-uvp-1-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Ask your doctor to send your prescription to Prescryptive\u2122 (MyRx.io) and manage it all on your phone.",
+    "fieldKey": "unauth-home-uvp-1-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Shop to save",
+    "fieldKey": "unauth-home-uvp-2-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Find the best price for your medication and transfer to a new pharmacy, all on your phone.",
+    "fieldKey": "unauth-home-uvp-2-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Trusted clinicians",
+    "fieldKey": "unauth-home-uvp-3-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Get connected to your local pharmacist and book services like testing and vaccines.",
+    "fieldKey": "unauth-home-uvp-3-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Secure, always",
+    "fieldKey": "unauth-home-uvp-4-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Our ScryptLOCK\u2122 privacy technology is built on blockchain to protect your personal information.",
+    "fieldKey": "unauth-home-uvp-4-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "favorite-pharmacies",
+    "language": "English",
+    "text": "Favorite pharmacies",
+    "fieldKey": "favorite-pharmacies-title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "favorite-pharmacies",
+    "language": "English",
+    "text": "Favorite pharmacies",
+    "fieldKey": "favorite-pharmacies-error-message",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "health-plan-screen",
+    "language": "English",
+    "text": "Prescryptive cards",
+    "fieldKey": "heading",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "health-plan-screen",
+    "language": "English",
+    "text": "Spend summary",
+    "fieldKey": "view-plan-accumulators",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "health-plan-screen",
+    "language": "English",
+    "text": "Add to wallet",
+    "fieldKey": "add-to-wallet",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Find a medication",
+    "fieldKey": "auth-home-search-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "fieldKey": "close-dialog",
+    "type": "Text",
+    "language": "English",
+    "text": "Close dialog",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Home",
+    "fieldKey": "home-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Learn more about us",
+    "fieldKey": "learn-more",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Privacy Policy",
+    "fieldKey": "privacy-policy",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Terms and Conditions",
+    "fieldKey": "t-&-c",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "fieldKey": "scroll-to-top",
+    "type": "Text",
+    "language": "English",
+    "text": "Go to top",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "fieldKey": "see-more",
+    "type": "Text",
+    "language": "English",
+    "text": "See more",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Provided by",
+    "fieldKey": "provided-by-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Favorite this pharmacy",
+    "fieldKey": "favorite-icon-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Unfavorite this pharmacy",
+    "fieldKey": "unfavorite-icon-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Plan saves",
+    "fieldKey": "plan-saves-tag-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "You save",
+    "fieldKey": "member-saves-tag-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Combination",
+    "fieldKey": "combination-tag-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Contact us",
+    "fieldKey": "contact-us",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Need help?",
+    "fieldKey": "need-help",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "prescription-benefit-plan-link",
+    "type": "Text",
+    "language": "English",
+    "text": "Spend summary",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "title",
+    "type": "Text",
+    "language": "English",
+    "text": "Medicine cabinet",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "see-more-prescriptions",
+    "type": "Text",
+    "language": "English",
+    "text": "See more prescriptions",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-screen",
+    "fieldKey": "claim-history-link",
+    "type": "Text",
+    "language": "English",
+    "text": "Claim history",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-screen",
+    "fieldKey": "open-plan-details",
+    "type": "Text",
+    "language": "English",
+    "text": "Open plan details",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-screen",
+    "fieldKey": "open-plan-details-not-available",
+    "type": "Text",
+    "language": "English",
+    "text": "Open plan details (not available)",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-screen",
+    "fieldKey": "title",
+    "type": "Text",
+    "language": "English",
+    "text": "Accumulators",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-learn-more-modal",
+    "fieldKey": "heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Benefit Plan Card",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-learn-more-modal",
+    "fieldKey": "heading-one",
+    "type": "Text",
+    "language": "English",
+    "text": "What is a Benefit Plan Card?",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-learn-more-modal",
+    "fieldKey": "description-one",
+    "type": "Text",
+    "language": "English",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. ",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-section",
+    "fieldKey": "heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Benefit Plan Card",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-section",
+    "fieldKey": "learn-more",
+    "type": "Text",
+    "language": "English",
+    "text": "Learn more",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "benefit-plan-section",
+    "fieldKey": "description",
+    "type": "Text",
+    "language": "English",
+    "text": "Show your pharmacist this card to utilize the prescription benefits provided by your employer.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-card",
+    "fieldKey": "button-label-not-sent",
+    "type": "Text",
+    "language": "English",
+    "text": "Shop medication",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-card",
+    "fieldKey": "button-label-sent",
+    "type": "Text",
+    "language": "English",
+    "text": "View order confirmation",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-card",
+    "fieldKey": "status-tag-not-sent",
+    "type": "Text",
+    "language": "English",
+    "text": "New prescription",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-card",
+    "fieldKey": "status-tag-sent",
+    "type": "Text",
+    "language": "English",
+    "text": "Sent to pharmacy",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "select-language",
+    "fieldKey": "select-language-title",
+    "type": "Text",
+    "language": "English",
+    "text": "Select language",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "The pharmacy will contact you to verify your eligibility and determine if you qualify for a patient assistance program. They will also collect payment and arrange mail delivery.",
+    "fieldKey": "pharmacy-description-mail-order",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Delivery info",
+    "fieldKey": "delivery-info-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Contact the pharmacy for questions on when your medication will be ready.",
+    "fieldKey": "delivery-info-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Pick up",
+    "fieldKey": "pick-up-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "What's next?",
+    "fieldKey": "whats-next-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "You should see a confirmation via text message",
+    "fieldKey": "whats-next-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "This is an estimated price using your insurance. Confirm at pharmacy.",
+    "fieldKey": "estimated-price-notice-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "if you have any questions.",
+    "fieldKey": "support-unlinked-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Contact us",
+    "fieldKey": "support-linked-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "OK",
+    "fieldKey": "ok-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Due to inclement weather, PCR test results could be delayed. Please choose a COVID-19 Antigen test if you need your test results sooner.",
+    "fieldKey": "banner-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Welcome, {firstName}!",
+    "fieldKey": "welcome-caption",
+    "version": 2,
+    "type": "RichText"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Is your prescription at another pharmacy?",
+    "fieldKey": "what-comes-next-another-pharmacy",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "We'll help you transfer it to get a better price.",
+    "fieldKey": "what-comes-next-another-pharmacy-subtitle",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Is this a new prescription?",
+    "fieldKey": "what-comes-next-new-prescription",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Ask your doctor to send your prescription to **Prescryptive (MyRx.io)**. You\u2019ll get a text message from us to pick a pharmacy and save up to 80%.",
+    "fieldKey": "what-comes-next-new-prescription-subtitle",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Share this card info with the pharmacist to get the price.",
+    "fieldKey": "prescription-at-this-pharmacy-instructions-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Is your prescription at this pharmacy?",
+    "fieldKey": "prescription-at-this-pharmacy-heading-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Discount only | Not insurance",
+    "fieldKey": "prescription-at-this-pharmacy-unauth-information-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "what-comes-next",
+    "language": "English",
+    "text": "Sign up for more savings",
+    "fieldKey": "prescription-at-this-pharmacy-signup-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "Verify prescription order",
+    "fieldKey": "verify-prescription-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "We will send your prescription:",
+    "fieldKey": "verify-prescription-content",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "Transfers take up to a day during our normal operating hours, Monday to Friday, 8am-5pm PT.",
+    "fieldKey": "prescription-arrival-notice",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "Prescription info",
+    "fieldKey": "prescription-info-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "Prescription number (optional)",
+    "fieldKey": "prescription-number-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "This helps us find it faster",
+    "fieldKey": "prescription-number-placeholder",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "Enter the address tied to your prescription",
+    "fieldKey": "address-component-header-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-prescription",
+    "language": "English",
+    "text": "To complete the order, we need a few more details.",
+    "fieldKey": "need-more-information-notice",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Delivery info",
+    "fieldKey": "offer-delivery-info-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "{pharmacyName} will contact you to arrange for payment and shipment.",
+    "fieldKey": "offer-delivery-info-description",
+    "version": 2,
+    "type": "RichText"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Pick up",
+    "fieldKey": "pick-up-heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "You should contact the pharmacy for information on when your medication will be ready.",
+    "fieldKey": "pick-up-preamble",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "What's next?",
+    "fieldKey": "what-is-next-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "We have sent you this order confirmation via text message.",
+    "fieldKey": "what-is-next-instructions",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Your order is confirmed",
+    "fieldKey": "order-confirmation-title-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "We have sent you this order confirmation via text message. It could take up to 2-3 days for your prescription to arrive at the pharmacy.",
+    "fieldKey": "order-confirmation-confirmation-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "See eligibility requirements",
+    "fieldKey": "order-confirmation-eligibility-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Your order",
+    "fieldKey": "order-section-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Summary",
+    "fieldKey": "order-confirmation-summary-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Order date",
+    "fieldKey": "order-confirmation-summary-order-date",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Order number",
+    "fieldKey": "order-confirmation-summary-order-number",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Plan pays",
+    "fieldKey": "order-confirmation-summary-plan-pays",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Open 24 hours",
+    "fieldKey": "order-confirmation-summary-you-pay",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Currently open",
+    "fieldKey": "order-confirmation-pickup-open-24-hours",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Currently open",
+    "fieldKey": "order-confirmation-pickup-open",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Currently closed",
+    "fieldKey": "order-confirmation-pickup-closed",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Opens at",
+    "fieldKey": "order-confirmation-pickup-opens-at",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Open till",
+    "fieldKey": "order-confirmation-pickup-closes-at",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "Prescriber info",
+    "fieldKey": "order-confirmation-prescriber-info-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "When you pick up your medication, remember to bring your insurance card.",
+    "fieldKey": "insurance-card-notice-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "order-confirmation",
+    "language": "English",
+    "text": "This is an estimated price using your insurance. Confirm at pharmacy.",
+    "fieldKey": "estimated-price-notice-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Send to pharmacy",
+    "fieldKey": "send-to-pharmacy",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Contact the pharmacy directly for pricing. If you choose this pharmacy, you will likely pay full price and then need to submit a request for reimbursement from your benefits, if applicable.",
+    "fieldKey": "pharmacy-description-out-of-network",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "transfer-flow",
+    "language": "English",
+    "text": "Contact the pharmacy for questions on when your medication will be ready. They will verify coupon eligibility.",
+    "fieldKey": "delivery-info-coupon-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-patient-name",
+    "language": "English",
+    "text": "For {firstName} {lastName}",
+    "fieldKey": "for-patient",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Clinical services",
+    "fieldKey": "unauth-clinical-services-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Book a COVID test or vaccine",
+    "fieldKey": "unauth-clinical-services-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Book now",
+    "fieldKey": "unauth-clinical-services-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Medication savings",
+    "fieldKey": "unauth-smartprice-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "At participating pharmacies",
+    "fieldKey": "unauth-smartprice-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Get started",
+    "fieldKey": "unauth-smartprice-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Transparency. Choice. Control.",
+    "fieldKey": "pbm-sign-up-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Connect your prescription benefits to start receiving savings and more.",
+    "fieldKey": "pbm-sign-up-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Shop and compare prescription prices across different retail pharmacies.",
+    "fieldKey": "pbm-benefit-1",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Know your out-of-pocket expenses in real-time, factoring in your deductible.",
+    "fieldKey": "pbm-benefit-2",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Own your prescriptions and get recommendations on cost-saving alternatives.",
+    "fieldKey": "pbm-benefit-3",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Continue",
+    "fieldKey": "continue-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "First name",
+    "fieldKey": "first-name-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Last name",
+    "fieldKey": "last-name-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Email address",
+    "fieldKey": "email-address-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Mobile number",
+    "fieldKey": "phone-number-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Member ID number",
+    "fieldKey": "member-id-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Usually 5-12 characters long",
+    "fieldKey": "member-id-placeholder",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Please enter your Member ID without any spaces or hyphens. For help [contact us]().",
+    "fieldKey": "member-id-help-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Your mobile number is your secure login.  We'll send you relevant notifications but never spam you.",
+    "fieldKey": "phone-number-help-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "You must be at least {childAgeLimit} years old to create an account.",
+    "fieldKey": "age-not-met-error",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Next",
+    "fieldKey": "next-button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Create PIN",
+    "fieldKey": "create-pin-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Protect your privacy by creating a PIN",
+    "fieldKey": "create-pin-screen-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Enter New PIN",
+    "fieldKey": "update-pin-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Your new PIN cannot be the same as your old PIN",
+    "fieldKey": "update-pin-error-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "PIN did not match. Try again",
+    "fieldKey": "confirm-pin-error-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Confirm New PIN",
+    "fieldKey": "confirm-pin-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Re-enter your PIN",
+    "fieldKey": "confirm-pin-screen-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Verify PIN",
+    "fieldKey": "verify-pin-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Sorry, we can't find a record matching the information you entered. Please try again or [contact us](#contactUs).",
+    "fieldKey": "account-not-found-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "One or more of the fields do not match our records. Please [contact us](#contactUs).",
+    "fieldKey": "data-mismatch-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "One or more of the fields do not match our records. Please try again or contact [Member Support](#memberSupport)",
+    "fieldKey": "activation-person-mismatch-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Looks like you don't have an account with us.",
+    "fieldKey": "no-account-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "We are unable to redirect you through to myPrescryptive.com. Please enter your information to create your account.",
+    "fieldKey": "sso-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Unknown error type {errorType}!",
+    "fieldKey": "unknown-error-type",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Tell us about yourself",
+    "fieldKey": "create-account-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "We'll use this info to verify your identity and create an account, so you can keep saving.",
+    "fieldKey": "create-account-instructions",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "We'll use this info to verify your identity with the information provided by your employer.",
+    "fieldKey": "pbm-member-instructions",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Already have an account?",
+    "fieldKey": "have-account-help-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Sign in",
+    "fieldKey": "sign-in",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Please enter a valid email address.",
+    "fieldKey": "email-error-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "The phone number provided does not support text messages. Please provide another number.",
+    "fieldKey": "sms-not-supported",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "Who will manage the account?",
+    "fieldKey": "prescription-person-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-up",
+    "language": "English",
+    "text": "I am the parent or caregiver of the patient. I want to manage the account and access the patient's prescription.",
+    "fieldKey": "prescription-person-instructions",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Let's get started",
+    "fieldKey": "pre-link-sent-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "First, enter your mobile number.",
+    "fieldKey": "enter-mobile-number",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "MyRx is a mobile experience. We'll text you with a registration link to get set up on your phone.",
+    "fieldKey": "myrx-mobile-experience",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Your number is also your login. After verifying your identity, we'll send you relevant notifications. We will keep your number secure and never spam you.",
+    "fieldKey": "your-number-is-login",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "If you have any questions, please contact us at",
+    "fieldKey": "support-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "support@prescryptive.com",
+    "fieldKey": "myrx-support-email",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Sent! You’ll get a text message at",
+    "fieldKey": "sent-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "with a link to MyRx.io.",
+    "fieldKey": "with-a-link",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Click this link to start the mobile registration process. You’ll re-enter your mobile number, verify it, fill out a short form, and create a pin. Then, you’ll be good to go!",
+    "fieldKey": "click-registration-process",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Link sent",
+    "fieldKey": "post-link-sent-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "The phone number provided does not support text messages. Please provide another number.",
+    "fieldKey": "sms-error-invalid-number",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Our text messaging service is currently unavailable. Please try again later or go to https://myrx.io on your mobile browser.",
+    "fieldKey": "sms-error-service-unavailable",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Didn't get a link?",
+    "fieldKey": "get-a-link-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Resend",
+    "fieldKey": "resend-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "desktop-modal",
+    "language": "English",
+    "text": "Send link",
+    "fieldKey": "send-link-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Privacy Policy",
+    "fieldKey": "privacy-policy",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Terms and Conditions",
+    "fieldKey": "t-&-c",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Learn more about us",
+    "fieldKey": "learn-more",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Pharmacy saved as favorite",
+    "fieldKey": "favorite-pharmacy-saved",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Pharmacy removed from favorites",
+    "fieldKey": "favorite-pharmacy-unsaved",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "When you find a pharmacy that you like, you can save it as a favorite. This makes it easier to find in the future.",
+    "fieldKey": "new-favorited-pharmacies-feature",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Sorry, this pharmacy could not be favorited",
+    "fieldKey": "favoriting-pharmacy-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Sorry, this pharmacy could not be unfavorited",
+    "fieldKey": "unfavoriting-pharmacy-error",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "fieldKey": "set-language-error",
+    "type": "Text",
+    "language": "English",
+    "text": "We were unable to switch the language, please try again.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Pharmacy",
+    "fieldKey": "favorite-tag-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Best value",
+    "fieldKey": "best-value-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Home delivery",
+    "fieldKey": "home-delivery-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "global",
+    "language": "English",
+    "text": "Prescryptive is ready to help",
+    "fieldKey": "prescryptive-help",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Schedule appointments with a local pharmacist.",
+    "fieldKey": "unauth-clinical-services-learn-more-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Fewer doctor visits: get COVID-19 tests, flu vaccines, and more.",
+    "fieldKey": "unauth-clinical-services-bullet-1",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Easy registration and scheduling in just a few minutes.",
+    "fieldKey": "unauth-clinical-services-bullet-2",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Manage your health records, track services, and more, all on your phone.",
+    "fieldKey": "unauth-clinical-services-bullet-3",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Cash-paying customers, you could save big. \nHere’s how it works:",
+    "fieldKey": "unauth-smartprice-learn-more-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Tap Get started to set up your account. It doesn’t take long.",
+    "fieldKey": "unauth-smartprice-bullet-1",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Save up to 80% on prescriptions at participating pharmacies.",
+    "fieldKey": "unauth-smartprice-bullet-2",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "home-page",
+    "language": "English",
+    "text": "Store prescription savings info and more on your phone.",
+    "fieldKey": "unauth-smartprice-bullet-3",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Start saving today!",
+    "fieldKey": "start-saving-today",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Show your pharmacist this info",
+    "fieldKey": "show-your-pharmacist",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "They\u2019ll use it to help you save on your medications. Valid at participating pharmacies. [Learn more](https://prescryptive.com/individual-smartprice-savings-card/#1625163490041-67ecd89f-0724)",
+    "fieldKey": "show-your-pharmacist-content",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Manage my information",
+    "fieldKey": "manage-my-information",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Health plan ID",
+    "fieldKey": "smart-price-card-header",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Name",
+    "fieldKey": "smart-price-card-name",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Member ID",
+    "fieldKey": "smart-price-card-member-id",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Group",
+    "fieldKey": "smart-price-card-group",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "BIN",
+    "fieldKey": "smart-price-card-bin",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "PCN",
+    "fieldKey": "smart-price-card-pcn",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "Provide your mobile number to the pharmacist",
+    "fieldKey": "smart-price-card-default-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "X01",
+    "fieldKey": "smart-price-card-cash-pcn-value",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "200P32F",
+    "fieldKey": "smart-price-card-cash-group-value",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-screen",
+    "language": "English",
+    "text": "610749",
+    "fieldKey": "smart-price-card-cash-bin-value",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-section",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "fieldKey": "heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-section",
+    "language": "English",
+    "text": "Show your pharmacist this card to save on your medications using Prescryptive's discount card program.",
+    "fieldKey": "description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-section",
+    "language": "English",
+    "text": "Learn more",
+    "fieldKey": "learn-more",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "fieldKey": "heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "What is",
+    "fieldKey": "heading-one-a",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "fieldKey": "heading-one-b",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "This is our discount savings program in lieu of insurance.  Prescryptive has contracts with over 65,000 pharmacies to help you save up to 80% off the cost of your medications.  ",
+    "fieldKey": "description-one",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "Does",
+    "fieldKey": "heading-two-a",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "fieldKey": "heading-two-b",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "apply to my deductible?",
+    "fieldKey": "heading-two-c",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "smart-price-learn-more-modal",
+    "language": "English",
+    "text": "It depends if the insurance plan allows the patient out of pocket towards your deductible when insurance is not used.",
+    "fieldKey": "description-two",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-person",
+    "language": "English",
+    "text": "Who is the prescription for?",
+    "fieldKey": "prescription-person-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-person",
+    "language": "English",
+    "text": "Myself",
+    "fieldKey": "first-person-option",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-person",
+    "language": "English",
+    "text": "On behalf of another person",
+    "fieldKey": "second-person-option",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "Verify patient's info",
+    "fieldKey": "verify-patient-info-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "We'll use this info to verify the patient's identity with the prescription details. Then, we'll ask for your info so you can manage the account and access the patient's prescription.",
+    "fieldKey": "verify-patient-info-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "First name",
+    "fieldKey": "first-name-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "First name",
+    "fieldKey": "first-info-placeholder",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "Last name",
+    "fieldKey": "last-name-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "Last name",
+    "fieldKey": "last-name-placeholder",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "Date of birth",
+    "fieldKey": "date-of-birth-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "I attest that I have authorization to disclose the patient's medical records to me.",
+    "fieldKey": "authorization-statement",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "verify-patient-info",
+    "language": "English",
+    "text": "Continue",
+    "fieldKey": "footer-button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Join employer plan",
+    "fieldKey": "add-membership-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "We'll use this info to verify your identity with the information provided by your employer.",
+    "fieldKey": "pbm-member-instructions",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Only needed to join your employer plan service",
+    "fieldKey": "member-id-help-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Your last name",
+    "fieldKey": "last-name-placeholder",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Your first name",
+    "fieldKey": "first-name-placeholder",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Create account",
+    "fieldKey": "create-account",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Join",
+    "fieldKey": "add-membership",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "example@mail.com",
+    "fieldKey": "email-placeholder",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Needed for account recovery purposes",
+    "fieldKey": "email-helper-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Create your account",
+    "fieldKey": "create-account-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Please create this account for yourself. This information will be used to verify your identity for all services. [Learn more](https://prescryptive.com/covid-consumer-testing/#faqs)",
+    "fieldKey": "create-account-instructions",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Please enter a valid email address",
+    "fieldKey": "invalid-email-error-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "First name",
+    "fieldKey": "first-name-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Last name",
+    "fieldKey": "last-name-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Email address",
+    "fieldKey": "email-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Member ID",
+    "fieldKey": "member-id-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Tell us about yourself",
+    "fieldKey": "claim-alert-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "One or more of the fields do not match our records. Please try again or contact [Member Support](#memberSupport)",
+    "fieldKey": "login-screen-error-message",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Account locked",
+    "fieldKey": "account-locked-header-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Your account is temporarily locked for 1 hour due to multiple invalid login attempts. Please try again after 1 hour.",
+    "fieldKey": "account-locked-warning-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Forgot your PIN?",
+    "fieldKey": "forgot-your-pin-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Forgot my PIN",
+    "fieldKey": "forgot-my-pin-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Login with your PIN",
+    "fieldKey": "login-pin-screen-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Login",
+    "fieldKey": "login-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Invalid PIN!",
+    "fieldKey": "max-pin-verify-error-1",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "attempt",
+    "fieldKey": "max-pin-verify-error-2",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "attempts",
+    "fieldKey": "max-pin-verify-error-3",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "left before your account is locked.",
+    "fieldKey": "max-pin-verify-error-4",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Reset",
+    "fieldKey": "reset-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "To reset your PIN, you must register again for Prescryptive",
+    "fieldKey": "login-pin-screen-info",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Enter Current PIN",
+    "fieldKey": "update-pin-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Next",
+    "fieldKey": "next-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Introducing security PIN",
+    "fieldKey": "pin-welcome-screen-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Continue",
+    "fieldKey": "continue-button-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Since your last login we have added a new security feature designed to make signing in easy and secure.",
+    "fieldKey": "pin-welcome-info-text-1",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Create your 4-digit PIN and you\u2019ll be good to go!",
+    "fieldKey": "pin-welcome-info-text-2",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Welcome back!",
+    "fieldKey": "welcome-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Sign In",
+    "fieldKey": "phone-number-login-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "New to MyRX?",
+    "fieldKey": "not-have-account-help-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Create an Account",
+    "fieldKey": "phone-number-login-create-account-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "We just sent you a code on your mobile phone.",
+    "fieldKey": "enter-code-sent",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Enter verification code",
+    "fieldKey": "enter-code",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Didn't receive your code?",
+    "fieldKey": "resend-code-question-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Resend",
+    "fieldKey": "resend-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Enter the correct code",
+    "fieldKey": "phone-verification-error-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "A one-time password has been sent to your registered mobile number.",
+    "fieldKey": "phone-verification-resent-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "I accept [Terms and Conditions](terms) and [Privacy Policy](privacy)",
+    "fieldKey": "t-&-c-checkbox-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "I attest that I have been authorized to manage the prescription for the patient. I understand that pharmacy staff may also require verification before releasing prescriptions. ",
+    "fieldKey": "attest-authorization-checkbox-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "The phone number provided does not support text messages. Please provide another number.",
+    "fieldKey": "phone-registration-error-message",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Your mobile number is your secure login. We'll send you relevant notifications but never spam you.",
+    "fieldKey": "relevant-text-alerts-message",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Sign in with your mobile number to continue.",
+    "fieldKey": "provide-phone-number-message",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "One-time verification code",
+    "fieldKey": "phone-verification-header-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "Date of birth",
+    "fieldKey": "dob-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Verify",
+    "fieldKey": "verify-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "Day",
+    "fieldKey": "day-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Verify your identity",
+    "fieldKey": "verify-identity-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Let's confirm some basic information about your account.",
+    "fieldKey": "verify-identity-instructions",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "",
+    "fieldKey": "verification-code-instructions",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Enter code",
+    "fieldKey": "otc-placeholder-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Resend code",
+    "fieldKey": "resend-code-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Extra security step required",
+    "fieldKey": "verify-identity-send-code-header",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "We need to send you a code to verify that you are the account owner. Please select the best way to send the code.",
+    "fieldKey": "verify-identity-send-code-instructions",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "sign-in",
+    "language": "English",
+    "text": "Verification code has been re-sent successfully",
+    "fieldKey": "verification-code-confirmation-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "Month",
+    "fieldKey": "month-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "Year",
+    "fieldKey": "year-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "January",
+    "fieldKey": "january-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "February",
+    "fieldKey": "february-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "March",
+    "fieldKey": "march-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "April",
+    "fieldKey": "april-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "May",
+    "fieldKey": "may-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "June",
+    "fieldKey": "june-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "July",
+    "fieldKey": "july-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "August",
+    "fieldKey": "august-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "September",
+    "fieldKey": "september-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "October",
+    "fieldKey": "october-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "November",
+    "fieldKey": "november-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "December",
+    "fieldKey": "december-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "You must be at least **{childAgeLimit}** years old to create an account.",
+    "fieldKey": "age-not-met-error",
+    "type": "RichText",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "Phone number",
+    "fieldKey": "phone-number-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "forms",
+    "language": "English",
+    "text": "(999) 999-9999",
+    "fieldKey": "phone-number-placeholder",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pop-up-modal",
+    "language": "English",
+    "text": "Are you leaving?",
+    "fieldKey": "myrx-logo-click-title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pop-up-modal",
+    "language": "English",
+    "text": "If you leave now, your progress won’t be saved.",
+    "fieldKey": "myrx-logo-click-description",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pop-up-modal",
+    "language": "English",
+    "text": "Leave anyway",
+    "fieldKey": "myrx-logo-click-primary-button",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pop-up-modal",
+    "language": "English",
+    "text": "Stay",
+    "fieldKey": "myrx-logo-click-secondary-button",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Favorite pharmacies",
+    "fieldKey": "favorite-pharmacies-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "View Rx Benefits Card",
+    "fieldKey": "id-card-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Benefit plan",
+    "fieldKey": "benefit-plan-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Spend summary",
+    "fieldKey": "plan-deductibles-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Profile",
+    "fieldKey": "profile-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Get support",
+    "fieldKey": "support-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Sign out",
+    "fieldKey": "sign-out-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Medicine cabinet",
+    "fieldKey": "medicine-cabinet-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Create account",
+    "fieldKey": "create-account-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Join employer plan",
+    "fieldKey": "join-employer-plan-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Contact us",
+    "fieldKey": "contact-us-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Close side menu",
+    "fieldKey": "close-button-accessibility-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Sign in",
+    "fieldKey": "sign-in-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "© 2023 Prescryptive Health, Inc.",
+    "fieldKey": "copyright-text-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "All rights reserved.",
+    "fieldKey": "rights-reserved-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Terms and Conditions",
+    "fieldKey": "t-&-c-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Privacy Policy",
+    "fieldKey": "privacy-policy-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "Language",
+    "fieldKey": "language-drawer-item-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribers-section",
+    "language": "English",
+    "text": "Prescribers",
+    "fieldKey": "heading",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribers-section",
+    "language": "English",
+    "text": "Send electronic prescriptions",
+    "fieldKey": "label-one",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribers-section",
+    "language": "English",
+    "text": "Select Prescryptive in the EHR system to send electronic prescriptions",
+    "fieldKey": "description-one",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribers-section",
+    "language": "English",
+    "text": "Send prescriptions via fax",
+    "fieldKey": "label-two",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribers-section",
+    "language": "English",
+    "text": "855-708-4808",
+    "fieldKey": "description-two",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacies-section",
+    "language": "English",
+    "text": "Pharmacies",
+    "fieldKey": "heading",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacies-section",
+    "language": "English",
+    "text": "Prescription claims",
+    "fieldKey": "label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacies-section",
+    "language": "English",
+    "text": "Pharmacies call Prescryptive Support Desk at 1-206-686-9016 ",
+    "fieldKey": "description",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "side-menu",
+    "language": "English",
+    "text": "View Benefit / Savings Card",
+    "fieldKey": "view-prescryptive-cards",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "select-language",
+    "fieldKey": "select-language-title",
+    "type": "Text",
+    "language": "Spanish",
+    "text": "Seleccionar idioma",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "select-language",
+    "fieldKey": "select-language-title",
+    "type": "Text",
+    "language": "Vietnamese",
+    "text": "Chọn ngôn ngữ",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "+14256553175",
+    "fieldKey": "support-pbm-phone",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "+14256553175",
+    "fieldKey": "support-pbm-phone",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "+14256552300",
+    "fieldKey": "support-cash-phone",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "+14256552300",
+    "fieldKey": "support-cash-phone",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Share your SmartPRICE™ card with your pharmacy when you pick up your medication.",
+    "fieldKey": "cash-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "Comparta su tarjeta SmartPRICE™ con su farmacia al momento de recoger su medicamento.",
+    "fieldKey": "cash-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Share your insurance card with your pharmacy when you pick up your medication.",
+    "fieldKey": "pbm-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "Comparta la tarjeta de su seguro con su farmacia al momento de recoger su medicamento.",
+    "fieldKey": "pbm-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Thank you for transferring your prescription. Please share this info with your pharmacy to save on medications:",
+    "fieldKey": "coupon-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "Gracias por transferir su prescripci\u00f3n. Por favor comparta esta informaci\u00f3n con su farmacia para ahorrar en sus medicaciones:",
+    "fieldKey": "coupon-text-information-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Group Number:",
+    "fieldKey": "group-number-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "Grupo:",
+    "fieldKey": "group-number-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "PCN:",
+    "fieldKey": "pcn-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "PCN:",
+    "fieldKey": "pcn-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Member ID:",
+    "fieldKey": "member-id-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "ID de miembro",
+    "fieldKey": "member-id-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "BIN:",
+    "fieldKey": "bin-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "BIN:",
+    "fieldKey": "bin-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "English",
+    "text": "Questions?",
+    "fieldKey": "questions-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "communication",
+    "language": "Spanish",
+    "text": "\u00bfPreguntas?",
+    "fieldKey": "questions-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "Price",
+    "fieldKey": "price",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "See price at pharmacy",
+    "fieldKey": "no-price",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "You pay",
+    "fieldKey": "you-pay",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "Plan pays",
+    "fieldKey": "plan-pays",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "*Patient assistance program is available",
+    "fieldKey": "assistance-program",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "Contact the pharmacy directly for pricing.",
+    "fieldKey": "contact-pharmacy-for-pricing",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "",
+    "fieldKey": "skeleton-place-holder",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "Insurance plan",
+    "fieldKey": "with-insurance",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "The price with insurance is an estimate. Call pharmacy to verify real price.",
+    "fieldKey": "verify-real-price",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-price-section",
+    "language": "English",
+    "text": "You pay in total",
+    "fieldKey": "total-price",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "You pay",
+    "fieldKey": "you-pay",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "Plan pays",
+    "fieldKey": "plan-pays",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "Prescribed medication",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-learn-more-modal",
+    "language": "English",
+    "text": "About benefit plan",
+    "fieldKey": "heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-learn-more-modal",
+    "language": "English",
+    "text": "Deductible",
+    "fieldKey": "deductibles-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-learn-more-modal",
+    "language": "English",
+    "text": "A deductible is the amount you pay for your health care before your insurance plan begins to pay.",
+    "fieldKey": "deductibles-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-learn-more-modal",
+    "language": "English",
+    "text": "Maximum Out of Pocket",
+    "fieldKey": "out-of-pocket-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-learn-more-modal",
+    "language": "English",
+    "text": "Is the maximum amount you'll ever have to pay for covered health expenses in a year.",
+    "fieldKey": "out-of-pocket-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescription-benefit-plan-screen",
+    "fieldKey": "learn-more-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Learn more about benefit plan",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "recommended-alternatives",
+    "language": "English",
+    "text": "Recommended alternatives",
+    "fieldKey": "title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "recommended-alternatives",
+    "language": "English",
+    "text": "You could save by switching medications.",
+    "fieldKey": "heading",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "recommended-alternatives",
+    "language": "English",
+    "text": "These medications could treat your condition. [Learn more.]()",
+    "fieldKey": "learn-more-description",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Switching your medication",
+    "fieldKey": "-heading",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Alternative medications may help you or your benefits plan save money while still treating your condition. Below are common definitions of alternatives. Talk to your doctor or pharmacist about all your treatment options and if switching is right for you.",
+    "fieldKey": "description",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "recommended-alternatives",
+    "language": "English",
+    "text": "Skip for now",
+    "fieldKey": "skip-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Switch your medication",
+    "fieldKey": "title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Switching to",
+    "fieldKey": "switching-medication-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Alternative combination",
+    "fieldKey": "combination-title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Alternative medication",
+    "fieldKey": "single-title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Call your doctor to discuss this option",
+    "fieldKey": "description",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Call my doctor",
+    "fieldKey": "call-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication",
+    "language": "English",
+    "text": "Done",
+    "fieldKey": "action-button-label",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "alternatives",
+    "language": "English",
+    "text": "Pricing at",
+    "fieldKey": "pricing-at",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "no-prescription-text",
+    "type": "Text",
+    "language": "English",
+    "text": "All your prescriptions in one place",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "how-to-send-prescription-text",
+    "type": "Text",
+    "language": "English",
+    "text": "How to send prescriptions to your medicine cabinet",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "transfer-existing-prescription-heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Transfer existing prescriptions",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "transfer-existing-prescription-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Save on existing prescriptions by easily transferring them to Prescryptive.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "say-the-word-prescryptive-heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Say the word Prescryptive",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "say-the-word-prescryptive-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Next time you visit your doctor ask them to send your prescriptions to Prescryptive.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "learn-more-modal-text",
+    "type": "RichText",
+    "language": "English",
+    "text": "Next time you visit your doctor, ask them to send your prescriptions to Prescryptive and enjoy  benefits like:\n\n- Find the best deal in a pharmacy near you.\n- Save more with our intelligent alternative medications recommendations.\n- Manage it all from the convenience of your phone.\n\nYour prescriber can’t find Prescryptive in their system? Help them by providing this information:\n\nSend electronic prescription to:\nPrescryptive\nRedmond, OR\n97756",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "learn-more-modal-heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Say the word: Prescryptive",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "fieldKey": "learn-more-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Learn more",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "language": "English",
+    "text": "Medicine cabinet",
+    "fieldKey": "medicine-cabinet-button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-card",
+    "language": "English",
+    "text": "You paid",
+    "fieldKey": "you-paid-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-card",
+    "language": "English",
+    "text": "Filled",
+    "fieldKey": "date-filled-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "language": "English",
+    "text": "Transfer a prescription",
+    "fieldKey": "transfer-a-prescription-link",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "medicine-cabinet-screen",
+    "language": "English",
+    "text": "Loading prescriptions",
+    "fieldKey": "loading-prescriptions-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-history-screen",
+    "language": "English",
+    "text": "Loading claims",
+    "fieldKey": "loading-claims-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Check my eligibility",
+    "fieldKey": "elegibility-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Pick your pharmacy",
+    "fieldKey": "pick-your-pharmacy-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Open information price modal",
+    "fieldKey": "information-button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Set my location",
+    "fieldKey": "location-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "We are working on getting you the best price in this location. Please check back soon.",
+    "fieldKey": "no-pharmacy-found-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "You pay",
+    "fieldKey": "you-pay-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Plan pays",
+    "fieldKey": "plan-pays-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Distance",
+    "fieldKey": "distance-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Pricing",
+    "fieldKey": "popup-modal-text-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Ok",
+    "fieldKey": "popup-modal-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Prices may vary at pharmacy. Taxes are not included in the price displayed.",
+    "fieldKey": "popup-modal-content-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Sorry, we are unable to find any pharmacies within {distance} mile of your current location.",
+    "fieldKey": "no-pharmacies-found-error-message-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Sorry, we are unable to find any pharmacies within {distance} miles of your current location.",
+    "fieldKey": "no-pharmacies-found-error-message-plural-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "Choose the best price and discover the available pricing options at each pharmacy!",
+    "fieldKey": "pick-your-pharmacy-sub-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pick-a-pharmacy",
+    "language": "English",
+    "text": "These are estimated prices based on your insurance. Confirm pricing at pharmacy.",
+    "fieldKey": "rtpb-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacy-open-status",
+    "language": "English",
+    "text": "Open 24 hours",
+    "fieldKey": "open-24-hours-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacy-open-status",
+    "language": "English",
+    "text": "Currently closed",
+    "fieldKey": "closed-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacy-open-status",
+    "language": "English",
+    "text": "Currently open",
+    "fieldKey": "open-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacy-open-status",
+    "language": "English",
+    "text": "Opens at {opens}",
+    "fieldKey": "opens-at-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pharmacy-open-status",
+    "language": "English",
+    "text": "Open till {closes}",
+    "fieldKey": "closes-at-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "Enter zip code",
+    "fieldKey": "place-holder-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "Search results",
+    "fieldKey": "search-results-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "Where is your prescription?",
+    "fieldKey": "header-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "Let's find your current pharmacy, and then we'll transfer your prescription to the new one.",
+    "fieldKey": "sub-header-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "See more pharmacies",
+    "fieldKey": "display-more-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "find-your-pharmacy",
+    "language": "English",
+    "text": "Back to the top",
+    "fieldKey": "back-to-the-top-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "great-price",
+    "language": "English",
+    "text": "Great price!",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "great-price",
+    "language": "English",
+    "text": "We analyzed your prescription and you are getting the best deal under your plan at your pharmacy.",
+    "fieldKey": "description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "great-price",
+    "language": "English",
+    "text": "Go to home",
+    "fieldKey": "done-button",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "plan-member-support",
+    "language": "English",
+    "text": "Prescryptive Member Support",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "ID",
+    "fieldKey": "id-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "Group",
+    "fieldKey": "group-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "PCN",
+    "fieldKey": "pcn-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "BIN",
+    "fieldKey": "bin-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "Rx Benefits Card",
+    "fieldKey": "rx-benefits-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "fieldKey": "rx-savings-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "Member ID",
+    "fieldKey": "member-id-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-content",
+    "language": "English",
+    "text": "Provide your mobile number to the pharmacist",
+    "fieldKey": "unauth-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Member since",
+    "fieldKey": "member-since",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "myrx.io",
+    "fieldKey": "myrx-url",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Members",
+    "fieldKey": "members-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Customer service live chat available at myrx.io/support or contact us at membersupport@prescryptive.com",
+    "fieldKey": "members-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Submit Claims",
+    "fieldKey": "claims-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Pharmacies and prescribers should submit claims to the Prescryptive Support Desk at 1-206-686-9016.",
+    "fieldKey": "claims-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Send prescriptions to",
+    "fieldKey": "send-prescriptions-instruction",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-back-content",
+    "language": "English",
+    "text": "Prescryptive Health, Inc. | Redmond, OR | ZIP 97756",
+    "fieldKey": "prescryptive-address",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "digital-id-card",
+    "language": "English",
+    "text": "Rx Id Card",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "digital-id-card",
+    "language": "English",
+    "text": "Rx Id Card",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "digital-id-card",
+    "language": "English",
+    "text": "Rx Id Card",
+    "fieldKey": "title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-doctor",
+    "language": "English",
+    "text": "These alternative medications may require a new prescription.",
+    "fieldKey": "switch-your-meds-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-doctor",
+    "language": "English",
+    "text": "You should talk to your doctor or pharmacist about the best option.",
+    "fieldKey": "switch-your-meds-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-doctor",
+    "language": "English",
+    "text": "Call now",
+    "fieldKey": "call-now-button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Generics",
+    "fieldKey": "generics-heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "These are FDA-approved medications that have the same active ingredient, strength, dosage form, and route of administration as your prescribed medication and therefore have the same therapeutic effect. In most cases, generic substitutions can be made by your pharmacist and do not require a new prescription.",
+    "fieldKey": "generics-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Therapeutic alternatives",
+    "fieldKey": "therapeutic-alternatives-heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Discretionary alternatives means replacing your prescribed medication with an FDA-approved medication that will treat you condition in the same or similiar way. Some alternatives may be a different dosage form or require a different route of administration. Discretionary alternatives require a new prescription from your provider.",
+    "fieldKey": "discretionary-alternatives-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Discretionary alternatives",
+    "fieldKey": "discretionary-alternatives-heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "switch-your-medication-slide-up-modal",
+    "language": "English",
+    "text": "Therapeutic alternatives means replacing your prescribed medication with an FDA-approved medication that has a similar therapeutic effect. Some alternatives may be a different dosage form or require a different route of administration. Therapeutic alternatives require a new prescription from your doctor.",
+    "fieldKey": "therapeutic-alternatives-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "keep-current-prescription-section",
+    "language": "English",
+    "text": "Keep current prescription.",
+    "fieldKey": "heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "keep-current-prescription-section",
+    "language": "English",
+    "text": "You can keep your current prescription at your pharmacy.",
+    "fieldKey": "description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "keep-current-prescription-section",
+    "language": "English",
+    "text": "Keep current prescription",
+    "fieldKey": "button-label",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "Sent to {pharmacyName} on {orderDate}",
+    "fieldKey": "sent-to-message",
+    "version": 2,
+    "type": "RichText"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "Sent to",
+    "fieldKey": "send-to-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "prescribed-medication",
+    "language": "English",
+    "text": "Estimated price at {pharmacyName}",
+    "fieldKey": "estimated-price-message",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "lowest-price-slide-up-modal",
+    "language": "English",
+    "text": "This is the lowest price we found",
+    "fieldKey": "heading",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "lowest-price-slide-up-modal",
+    "language": "English",
+    "text": "Based on current data, this is the estimated lowest price available. When you fill your medication, you can pick another pharmacy and see more prices.",
+    "fieldKey": "description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Contact your caregiver",
+    "fieldKey": "contact-caregiver-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "You must meet certain age requirements to have a myPrescryptive account. Only your caregiver can manage your prescriptions.",
+    "fieldKey": "contact-caregiver-title-description",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Here is more information about caregivers and dependents",
+    "fieldKey": "contact-caregiver-subtitle",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Dependents",
+    "fieldKey": "contact-caregiver-sub-dependents-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "are people who are not able to take care of themseleves, either because they do not meet the legal age requirements, or because they have a medical condition.",
+    "fieldKey": "contact-caregiver-sub-dependents-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "son personas que no pueden valerse por sí mismas, ya sea porque no cumplen con los requisitos legales de edad o porque tienen una condición médica.",
+    "fieldKey": "contact-caregiver-sub-dependents-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Caregivers",
+    "fieldKey": "contact-caregiver-sub-caregivers-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "help take care of dependents, including managing their healthcare and making medical decisions.",
+    "fieldKey": "contact-caregiver-sub-caregivers-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "In the US, the parent or legal guardian is typically the caregiver for a minor dependent, but a court can appoint a guardian if necessary.",
+    "fieldKey": "contact-caregiver-sub-caretip-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Prescryptive is ready to help.",
+    "fieldKey": "contact-caregiver-help-link-title",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Contact Us",
+    "fieldKey": "contact-caregiver-help-link-text",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "if you have any questions.",
+    "fieldKey": "contact-caregiver-help-link-info",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "contact-your-caregiver",
+    "language": "English",
+    "text": "Provided by",
+    "fieldKey": "contact-caregiver-provided-by",
+    "version": 2,
+    "type": "Text"
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "fatal-error",
+    "fieldKey": "fatal-error-loading",
+    "type": "Text",
+    "language": "English",
+    "text": "Oops! An error occurred while loading",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "fatal-error",
+    "fieldKey": "fatal-error-contact",
+    "type": "Text",
+    "language": "English",
+    "text": "If the error continues, contact",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Learn more",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "heading-one",
+    "type": "Text",
+    "language": "English",
+    "text": "What is a prescription claim?",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "description-one",
+    "type": "Text",
+    "language": "English",
+    "text": "A request by your pharmacy to your health insurance to verify prescription coverage and cost.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "heading-two",
+    "type": "Text",
+    "language": "English",
+    "text": "Why was my claim reversed?",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "description-two",
+    "type": "Text",
+    "language": "English",
+    "text": "There are a variety of reasons why a pharmacy may reverse the prescription claim including: change of prescription, patient did not pick up, check coverage and cost, etc.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "heading-three",
+    "type": "Text",
+    "language": "English",
+    "text": "When will my prescription be ready?",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-slide-up-modal",
+    "fieldKey": "description-three",
+    "type": "Text",
+    "language": "English",
+    "text": "Follow up with the pharmacy to determine when the prescription is ready.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "pharmacy-placeholder",
+    "type": "Text",
+    "language": "English",
+    "text": "The pharmacy ",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "heading",
+    "type": "Text",
+    "language": "English",
+    "text": "Prescription claim reversed",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "description-one",
+    "type": "Text",
+    "language": "English",
+    "text": "reversed your prescription claim for",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "description-two",
+    "type": "Text",
+    "language": "English",
+    "text": ". Contact the pharmacy for an update on your prescription.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "phone-button",
+    "type": "Text",
+    "language": "English",
+    "text": "Call pharmacy",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "home-button",
+    "type": "Text",
+    "language": "English",
+    "text": "Home",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "claim-reversal-screen",
+    "fieldKey": "learn-more",
+    "type": "Text",
+    "language": "English",
+    "text": "[Learn more]()",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "pbm-title",
+    "type": "Text",
+    "language": "English",
+    "text": "With insurance",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "pbm-sub-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Your plan pays {planPays}",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "smart-price-title",
+    "type": "Text",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "smart-price-sub-text",
+    "type": "Text",
+    "language": "English",
+    "text": "Your price without insurance",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "language": "English",
+    "text": "With insurance",
+    "fieldKey": "third-party-title",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "language": "English",
+    "text": "Confirm price at pharmacy",
+    "fieldKey": "third-party-sub-text",
+    "type": "Text",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-section",
+    "fieldKey": "smart-price-description",
+    "type": "Text",
+    "language": "English",
+    "text": "Show your pharmacist this card to get this price.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-section",
+    "fieldKey": "smart-price-title",
+    "type": "Text",
+    "language": "English",
+    "text": "SmartPRICE™",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "no-price-label",
+    "type": "Text",
+    "language": "English",
+    "text": "Contact the pharmacy directly for pricing.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-section",
+    "fieldKey": "pbm-title",
+    "type": "Text",
+    "language": "English",
+    "text": "Prescryptive Benefit Plan",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "rx-id-card-section",
+    "fieldKey": "pbm-description",
+    "type": "Text",
+    "language": "English",
+    "text": "Show your pharmacist this card to get this price.",
+    "version": 2
+  },
+  {
+    "groupKey": "pricing-options",
+    "fieldKey": "pricing-options-title ",
+    "type": "Text",
+    "language": "English",
+    "text": "Select your pricing option",
+    "version": 2
+  },
+  {
+    "groupKey": "pricing-options",
+    "fieldKey": "pricing-options-description",
+    "type": "Text",
+    "language": "English",
+    "text": "Choose the pricing option that aligns with your budget and needs.",
+    "version": 2
+  },
+  {
+    "experienceKey": "MyRx",
+    "groupKey": "pricing-options",
+    "fieldKey": "pricing-options-footer-label",
+    "type": "Text",
+    "language": "English",
+    "text": "Preview order {memberPays}",
+    "version": 2
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "child_identifier": "60e812d8e6d83335489b07f5",
+  "child_first_name": "child_first_name",
+  "child_last_name": "child_last_name",
+  "date_of_birth": "2010-01-01",
+  "sie_user_details": {
+    "identifier": "60dee487156056521030ece3",
+    "updated_values": {
+      "$set": {
+        "phoneNumber": "",
+        "firstName": "",
+        "lastName": "",
+        "dateOfBirth": "",
+        "events" : [ ]
+      }
+    }
+  },
+  "update_for_join_emp": {
+    "$set": {
+      "phoneNumber": ""
+    }
+  }
+}

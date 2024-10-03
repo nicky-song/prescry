@@ -1,0 +1,39 @@
+{
+  "updated_values": {
+  "$set":{
+    "status":"invited",
+    "location" : "booking-providerautomation@pharmacy.test.myrx.io",
+    "invitation" : {
+		"invitedOn" : "T20:27:43.1746858+00:00",
+		"start" : "T07:00:00+00:00",
+		"end" : "T06:59:59.999+00:00"
+	}
+  }},
+  "c19_vaccine_dose1_service_type":  "c19-vaccine-dose1",
+  "invited_status" : "invited",
+  "join_waitlist_query_dict" : {
+    "serviceType": "",
+    "phoneNumber": "",
+    "status": ""
+  },
+   "select_service_type": {
+     "antigen": "abbott_antigen",
+     "medicare": "medicare_abbott_antigen",
+     "medicaid": "medicaid_abbott_antigen"
+   },
+  "join_emploer_plan": {
+    "join_emp_plan_number": {
+      "phoneNumber": ""
+    },
+    "updated_values": {
+      "$set": {
+        "phoneNumber": ""
+      }
+    }
+  },
+  "digital_card": {
+    "cash_user_rxgroup_type": "CASH",
+    "sie_user_rxgroup_type": "SIE",
+    "issuer_no": 9151014609
+  }
+}

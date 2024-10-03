@@ -1,0 +1,23 @@
+{
+  "name": "migrate-user-data",
+  "version": "1.0.0",
+  "description": "This script updates patient and patient account data from corresponding myrx accounts",
+  "main": "update-patient-data.js",
+  "scripts": {
+    "start": "node update-patient-data.js",
+    "migrate": "node migrate-new-users.js",
+    "migrate-deps": "node migrate-new-dependents",
+    "link-pbm": "node link-pbm-users.js",
+    "add-language-preference-to-patient": "node add-language-preference-to-patient.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.1",
+    "crypto": "^1.0.1",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.1",
+    "mongodb": "^4.2.0",
+    "node-fetch": "^2.6.0"
+  },
+  "license": "MIT"
+}
