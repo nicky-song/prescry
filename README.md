@@ -1,4 +1,4 @@
-# Prescryptive-experiences
+# Prescry
 
 ## `MAJOR CHANGE`
 
